@@ -6,7 +6,7 @@ on:
       run: { description: "run id", required: true, default: "drv-manual" }
       driver: { description: "GeForce driver version", required: true, default: "621.14" }
   push:
-    paths: ["scripts/driver_lab.ps1", "scripts/linux_wine.sh", ".github/workflows/driver-lab.yml"]
+    paths: ["scripts/driver_lab.ps1", ".github/workflows/driver-lab.yml"]
 permissions: { contents: write }
 env:
   RUN: ${{ github.event.inputs.run || format('drv-{0}', github.run_number) }}

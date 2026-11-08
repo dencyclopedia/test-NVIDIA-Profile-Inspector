@@ -1,0 +1,35 @@
+# nvprofileinspector.com test lab: NPI under Wine on Ubuntu (lab C). Split out of driver-lab.yml after drv-1.
+name: wine-lab
+on:
+  workflow_dispatch:
+    inputs:
+      run: { description: "run id", required: true, default: "wine-manual" }
+  push:
+    paths: ["scripts/linux_wine.sh", ".github/workflows/wine-lab.yml"]
+permissions: { contents: write }
+env:
+  RUN: ${{ github.event.inputs.run || format('wine-{0}', github.run_number) }}
+jobs:
+  wine:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 80
+    steps:
+      - uses: actions/checkout@v4
+      - name: setup
+        run: |
+          sudo dpkg --add-architecture i386
+          sudo mkdir -pm755 /etc/apt/keyrings
+          sudo wget -qO /etc/apt/keyrings/winehq-archive.key https://dl.winehq.org/wine-builds/winehq.key
+          sudo wget -qNP /etc/apt/sources.list.d/ https://dl.winehq.org/wine-builds/ubuntu/dists/noble/winehq-noble.sources
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq --install-recommends winehq-stable
+          sudo apt-get install -y -qq xvfb imagemagick wmctrl x11-utils cabextract unzip mesa-vulkan-drivers
+          sudo wget -qO /usr/local/bin/winetricks https://raw.githubusercontent.com/Winetricks/winetricks/master/src/winetricks && sudo chmod +x /usr/local/bin/winetricks
+      - name: wine lab
+        run: bash scripts/linux_wine.sh "$RUN"
+      - name: commit results
+        if: always()
+        run: |
+          find results -name '*.exe' -o -name '*.dll' | xargs rm -f
+          git config user.name "npi-lab"; git config user.email "lab@users.noreply.github.com"
+          git add results && git commit -m "wine lab results $RUN" && git pull --rebase && git push || echo "nothing to commit"
