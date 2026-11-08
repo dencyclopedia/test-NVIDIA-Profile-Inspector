@@ -6,7 +6,7 @@ on:
     inputs:
       run: { description: "run id (folder under results/)", required: true, default: "run-manual" }
   push:
-    paths: ["scripts/**", "samples/**", ".github/workflows/lab.yml"]
+    paths: ["scripts/windows_lab.ps1", "samples/**", ".github/workflows/lab.yml"]
 permissions: { contents: write }
 env:
   RUN: ${{ github.event.inputs.run || format('ci-{0}', github.run_number) }}
