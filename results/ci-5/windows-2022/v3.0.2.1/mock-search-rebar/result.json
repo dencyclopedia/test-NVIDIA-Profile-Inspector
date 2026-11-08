@@ -1,0 +1,150 @@
+{
+  "case": "mock-search-rebar",
+  "version": "v3.0.2.1",
+  "machine": "windows-2022",
+  "args": "-mock",
+  "settings": {
+    "SettingSourceReference": "true"
+  },
+  "started": "2026-11-08T14:24:57.3948596+00:00",
+  "firstWindowMs": 269,
+  "windowTitlesSeen": [
+    "NVIDIA PROFILE INSPECTOR - MOCK!"
+  ],
+  "exitedEarly": false,
+  "action": "set",
+  "after_0": {
+    "title": "NVIDIA PROFILE INSPECTOR - MOCK!",
+    "class": "HwndWrapper[nvidiaProfileInspector.exe;;cc1346d7-d7ea-4e9b-a30c-cfd77a88d8a4]",
+    "texts": [
+      "NVIDIA PROFILE INSPECTOR - MOCK!",
+      "nvidiaProfileInspector.UI.ViewModels.SettingGroupHeaderViewModel",
+      "nvidiaProfileInspector.UI.ViewModels.SettingItemViewModel",
+      "Rebar Expr Modes",
+      "0x00000000 Mode 0",
+      "0x00000000",
+      "rBAR - Enable",
+      "Disabled",
+      "rBAR - Flags (0x000F00BE)",
+      "rBAR - Flags (0x000F00BF)",
+      "rBAR - Intel CPU Exclusion",
+      "rBAR - Options",
+      "rBAR - Size Limit",
+      "0x0000000000000000",
+      "Driver unavailable",
+      "1 profiles",
+      "926 known (0 in profiles / 1 seen)",
+      "OTA unknown",
+      "v3.0.2.1"
+    ],
+    "shot": "1360 x 860"
+  },
+  "workingSetMB": 112.3,
+  "windows": [
+    {
+      "title": "NVIDIA PROFILE INSPECTOR - MOCK!",
+      "class": "HwndWrapper[nvidiaProfileInspector.exe;;cc1346d7-d7ea-4e9b-a30c-cfd77a88d8a4]",
+      "texts": [
+        "NVIDIA PROFILE INSPECTOR - MOCK!",
+        "nvidiaProfileInspector.UI.ViewModels.SettingGroupHeaderViewModel",
+        "nvidiaProfileInspector.UI.ViewModels.SettingItemViewModel",
+        "3Dsmax Shim Layer Control",
+        "0x00000000 Disable - Disable the 3DSMax shim layer",
+        "0x00000000",
+        "Ambient Occlusion - Compatibility",
+        "Antialiasing - Compatibility (DX1x)",
+        "Antialiasing - Compatibility (DX9)",
+        "Antialiasing Fix (DX9)",
+        "Off",
+        "0x00000001",
+        "App Compat Shim",
+        "0x00000000 Disabled",
+        "BM Offer Reclaim Dx1x",
+        "CPL_HIDDEN_PROFILE_ID",
+        "0x00000000 CPL_HIDDEN_PROFILE_DISABLED",
+        "Exceptions To Blocking Apps",
+        "Experimental - Disable all asserts in debug drivers",
+        "Experimental - Foreground Detection Policy",
+        "0x00000000 FOREGROUND_POLICY_PRESENT_WND - If present window is a foreground window then assume this app is in foreground",
+        "Experimental - Hardware Bug Workaround Flags",
+        "0x00000000 DISABLED - Disable all non-default HW WARs",
+        "Experimental - rxinput.dll Injection",
+        "Experimental - T$ always to avoid HW Bug 3123136",
+        "0x00000000 FALSE",
+        "Experimental - The WAR, which means it will set NV_PGRAPH_PRI_GPCS_TC_FLUSH_CRETERION = 1(END_OF_CBE)",
+        "0x00000000 DISABLED - OFF",
+        "Experimental - Use driver created sync objs in InterChannelSync",
+        "Kepler Apply ALD WAR",
+        "0x00000000 Off",
+        "SHIM_RENDERING_MODE_ID",
+        "0x00000010 SHIM_RENDERING_MODE_AUTO_SELECT",
+        "0x00000010",
+        "SHIM_RENDERING_OPTIONS_ID",
+        "0x00000000 SHIM_RENDERING_OPTIONS_DEFAULT_RENDERING_MODE",
+        "Validate Params",
+        "0x00000000 Nothing - Do not validate any input",
+        "APPIDLE_DYNAMIC_FRL_FPS_ID",
+        "APPIDLE_DYNAMIC_FRL_THRESHOLD_TIME_ID",
+        "Async9 Present Mode",
+        "Background Application Max Frame Rate For Nvcpl",
+        "0x00000000 MIN",
+        "Battery Boost",
+        "0x00000000 DISABLED - Disabled",
+        "BATTERY_BOOST_APP_FPS_ID",
+        "0x00000000 BATTERY_BOOST_APP_FPS_NO_OVERRIDE",
+        "Configure Dynamic FPS Feature Mode As Dynamic Frame Rate Limiter Mode",
+        "0x00000000 0 FPS",
+        "Control Display Rearrangement",
+        "Enable Disable Dynamic FPS Feature",
+        "Enable Disable Dynamic FPS Feature Based On Nested Idle AND Framecomparison",
+        "Enable Disable NV Framecomparator Feature",
+        "Experimental - G-SYNC LCD Overdrive",
+        "Experimental - Low latency mode settings",
+        "Experimental - OS Variable Refresh Rate Override",
+        "0x00000000 ALLOW - Honor OS VRR setting",
+        "Flip Indicator",
+        "Disabled",
+        "Frame Rate Limiter",
+        "Frame Rate Limiter - Background Application",
+        "Frame Rate Limiter For Nvcpl",
+        "Driver unavailable",
+        "1 profiles",
+        "926 known (0 in profiles / 1 seen)",
+        "OTA unknown",
+        "v3.0.2.1"
+      ],
+      "shot": "1360 x 860"
+    }
+  ],
+  "elapsedMs": 17016,
+  "filesCreated": [
+    {
+      "name": "game-cyberpunk-2077.nip",
+      "bytes": 2472
+    },
+    {
+      "name": "game-fortnite.nip",
+      "bytes": 2464
+    },
+    {
+      "name": "game-rdr2.nip",
+      "bytes": 1902
+    },
+    {
+      "name": "game-skyrim-se.nip",
+      "bytes": 1524
+    },
+    {
+      "name": "replace-a.nip",
+      "bytes": 1496
+    },
+    {
+      "name": "replace-b.nip",
+      "bytes": 1020
+    },
+    {
+      "name": "settings.xml",
+      "bytes": 1144
+    }
+  ]
+}

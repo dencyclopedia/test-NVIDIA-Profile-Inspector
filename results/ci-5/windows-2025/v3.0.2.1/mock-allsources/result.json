@@ -1,0 +1,130 @@
+{
+  "case": "mock-allsources",
+  "version": "v3.0.2.1",
+  "machine": "windows-2025",
+  "args": "-mock",
+  "settings": {
+    "SettingSourceConstants": "true",
+    "ShowSettingIdInName": "true",
+    "SettingSourceScan": "true",
+    "SettingSourceReference": "true",
+    "SettingSourceDriver": "true"
+  },
+  "started": "2026-11-08T14:25:03.9135701+00:00",
+  "firstWindowMs": 269,
+  "windowTitlesSeen": [
+    "NVIDIA PROFILE INSPECTOR - MOCK!"
+  ],
+  "exitedEarly": false,
+  "workingSetMB": 118.5,
+  "windows": [
+    {
+      "title": "NVIDIA PROFILE INSPECTOR - MOCK!",
+      "class": "HwndWrapper[nvidiaProfileInspector.exe;;4722ad20-d418-47eb-8e85-3bd1652ffa7f]",
+      "texts": [
+        "NVIDIA PROFILE INSPECTOR - MOCK!",
+        "nvidiaProfileInspector.UI.ViewModels.SettingGroupHeaderViewModel",
+        "nvidiaProfileInspector.UI.ViewModels.SettingItemViewModel",
+        "0x000858F7 Antialiasing Fix (DX9)",
+        "Off",
+        "0x00000001",
+        "0x00120513 Experimental - The WAR, which means it will set NV_PGRAPH_PRI_GPCS_TC_FLUSH_CRETERION = 1(END_OF_CBE)",
+        "0x00000000 DISABLED - OFF",
+        "0x00000000",
+        "0x002808D9 Experimental - Use driver created sync objs in InterChannelSync",
+        "0x002C74F1 3Dsmax Shim Layer Control",
+        "0x00000000 Disable - Disable the 3DSMax shim layer",
+        "0x002C7F45 Ambient Occlusion - Compatibility",
+        "0x00367A46 Experimental - Disable all asserts in debug drivers",
+        "0x00000000 DISABLED",
+        "0x003DD400 Experimental - T$ always to avoid HW Bug 3123136",
+        "0x00000000 FALSE",
+        "0x0078EEE8 Experimental - Foreground Detection Policy",
+        "0x00000000 FOREGROUND_POLICY_PRESENT_WND - If present window is a foreground window then assume this app is in foreground",
+        "0x00846411 Kepler Apply ALD WAR",
+        "0x00000000 Off",
+        "0x00A25F24 Experimental - Hardware Bug Workaround Flags",
+        "0x00000000 DISABLED - Disable all non-default HW WARs",
+        "0x00A9D3C5 Validate Params",
+        "0x00000000 Nothing - Do not validate any input",
+        "0x00B82343 App Compat Shim",
+        "0x00D55F7D Antialiasing - Compatibility (DX9)",
+        "0x00DC68B0 BM Offer Reclaim Dx1x",
+        "0x00E32F8A Antialiasing - Compatibility (DX1x)",
+        "0x104BC9A1 Exceptions To Blocking Apps",
+        "0x106D5CFF CPL_HIDDEN_PROFILE_ID",
+        "0x00000000 CPL_HIDDEN_PROFILE_DISABLED",
+        "0x10F9DC81 SHIM_RENDERING_MODE_ID",
+        "0x00000010 SHIM_RENDERING_MODE_AUTO_SELECT",
+        "0x00000010",
+        "0x10F9DC84 SHIM_RENDERING_OPTIONS_ID",
+        "0x00000000 SHIM_RENDERING_OPTIONS_DEFAULT_RENDERING_MODE",
+        "0x80303A19 Experimental - rxinput.dll Injection",
+        "0x0005F512 Present Mode Async Dx10",
+        "0x00000000 Auto",
+        "0x0005F543 Ultra Low Latency - CPL State",
+        "0x0015F512 Async9 Present Mode",
+        "0x00280880 Indicator Vertical Sync",
+        "0x002CF156 Flip Indicator",
+        "Disabled",
+        "0x0045AB1F Experimental - Low latency mode settings",
+        "0x00598888 Experimental - G-SYNC LCD Overdrive",
+        "0x005A375C Vertical Sync - Tear Control",
+        "Standard",
+        "0x96861077",
+        "0x0064B541 Prefered Refreshrate",
+        "Use the 3D application setting",
+        "0x00666634 Silk Smoothness Mode",
+        "0x00676635 Indicator Triple Buffering",
+        "0x007BA09E Maximum Pre-Rendered Frames",
+        "0x008DF510 GSYNC - Support Indicator Overlay",
+        "0x00987251 Silk Smoothness Strength",
+        "0x00000000 Low [Default]",
+        "0x00A879CF Vertical Sync",
+        "0x60925292",
+        "0x00A879FF Experimental - OS Variable Refresh Rate Override",
+        "0x00000000 ALLOW - Honor OS VRR setting",
+        "0x10029538 GSYNC - Indicator Overlay",
+        "0x10111133 VRPRERENDERLIMIT_ID",
+        "0x00000001 1",
+        "Driver unavailable",
+        "1 profiles",
+        "926 known (0 in profiles / 1 seen)",
+        "OTA unknown",
+        "v3.0.2.1"
+      ],
+      "shot": "1360 x 860"
+    }
+  ],
+  "elapsedMs": 14809,
+  "filesCreated": [
+    {
+      "name": "game-cyberpunk-2077.nip",
+      "bytes": 2472
+    },
+    {
+      "name": "game-fortnite.nip",
+      "bytes": 2464
+    },
+    {
+      "name": "game-rdr2.nip",
+      "bytes": 1902
+    },
+    {
+      "name": "game-skyrim-se.nip",
+      "bytes": 1524
+    },
+    {
+      "name": "replace-a.nip",
+      "bytes": 1496
+    },
+    {
+      "name": "replace-b.nip",
+      "bytes": 1020
+    },
+    {
+      "name": "settings.xml",
+      "bytes": 1556
+    }
+  ]
+}

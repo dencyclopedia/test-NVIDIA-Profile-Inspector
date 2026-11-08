@@ -1,0 +1,55 @@
+{
+  "case": "mock-splash",
+  "version": "v3.0.2.1",
+  "machine": "windows-2022",
+  "args": "-mock",
+  "settings": {},
+  "started": "2026-11-08T14:23:17.1283542+00:00",
+  "firstWindowMs": 249,
+  "windowTitlesSeen": [],
+  "exitedEarly": false,
+  "workingSetMB": 95.5,
+  "windows": [
+    {
+      "title": "",
+      "class": "HwndWrapper[nvidiaProfileInspector.exe;Startup splash screen;94769f75-db1e-4e5b-b9df-c85bf60fa054]",
+      "texts": [
+        "NVIDIA PROFILE INSPECTOR",
+        "Preparing driver profiles and settings...",
+        "Loading application"
+      ],
+      "shot": "508 x 187"
+    }
+  ],
+  "elapsedMs": 1644,
+  "filesCreated": [
+    {
+      "name": "game-cyberpunk-2077.nip",
+      "bytes": 2472
+    },
+    {
+      "name": "game-fortnite.nip",
+      "bytes": 2464
+    },
+    {
+      "name": "game-rdr2.nip",
+      "bytes": 1902
+    },
+    {
+      "name": "game-skyrim-se.nip",
+      "bytes": 1524
+    },
+    {
+      "name": "replace-a.nip",
+      "bytes": 1496
+    },
+    {
+      "name": "replace-b.nip",
+      "bytes": 1020
+    },
+    {
+      "name": "settings.xml",
+      "bytes": 1030
+    }
+  ]
+}

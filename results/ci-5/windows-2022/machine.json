@@ -1,0 +1,26 @@
+{
+  "machine": "windows-2022",
+  "run": "ci-5",
+  "date": "2026-11-08T14:22:00.1006630+00:00",
+  "os": "Microsoft Windows Server 2022 Datacenter 10.0.20348 build 20348",
+  "cpu": "Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz",
+  "ramGB": 16.0,
+  "gpus": [
+    "Microsoft Hyper-V Video | driver 10.0.20348.1"
+  ],
+  "netFxRelease": 533509,
+  "netFxVersion": "4.8.09221",
+  "nvapi64": false,
+  "nvapi32": false,
+  "drsFolder": false,
+  "isAdmin": true,
+  "uacEnableLUA": 1,
+  "resolutionBefore": "1024x768",
+  "setResolution": "0",
+  "resolutionAfter": "1920x1080",
+  "defender": {
+    "AMServiceEnabled": true,
+    "RealTimeProtectionEnabled": false,
+    "AntivirusSignatureVersion": "1.463.80.0"
+  }
+}

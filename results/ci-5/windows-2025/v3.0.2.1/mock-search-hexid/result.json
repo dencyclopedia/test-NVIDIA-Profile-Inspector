@@ -1,0 +1,140 @@
+{
+  "case": "mock-search-hexid",
+  "version": "v3.0.2.1",
+  "machine": "windows-2025",
+  "args": "-mock",
+  "settings": {},
+  "started": "2026-11-08T14:35:24.5130586+00:00",
+  "firstWindowMs": 262,
+  "windowTitlesSeen": [
+    "NVIDIA PROFILE INSPECTOR - MOCK!"
+  ],
+  "exitedEarly": false,
+  "action": "set",
+  "after_0": {
+    "title": "NVIDIA PROFILE INSPECTOR - MOCK!",
+    "class": "HwndWrapper[nvidiaProfileInspector.exe;;0c3e6428-9659-4977-a2fc-6fc841517670]",
+    "texts": [
+      "NVIDIA PROFILE INSPECTOR - MOCK!",
+      "nvidiaProfileInspector.UI.ViewModels.SettingGroupHeaderViewModel",
+      "nvidiaProfileInspector.UI.ViewModels.SettingItemViewModel",
+      "Frame Rate Limiter V3",
+      "Off",
+      "0x00000000",
+      "Driver unavailable",
+      "1 profiles",
+      "926 known (0 in profiles / 1 seen)",
+      "OTA unknown",
+      "v3.0.2.1"
+    ],
+    "shot": "1360 x 860"
+  },
+  "workingSetMB": 114.2,
+  "windows": [
+    {
+      "title": "NVIDIA PROFILE INSPECTOR - MOCK!",
+      "class": "HwndWrapper[nvidiaProfileInspector.exe;;0c3e6428-9659-4977-a2fc-6fc841517670]",
+      "texts": [
+        "NVIDIA PROFILE INSPECTOR - MOCK!",
+        "nvidiaProfileInspector.UI.ViewModels.SettingGroupHeaderViewModel",
+        "nvidiaProfileInspector.UI.ViewModels.SettingItemViewModel",
+        "Ambient Occlusion - Compatibility",
+        "0x00000000",
+        "Antialiasing - Compatibility (DX1x)",
+        "Antialiasing - Compatibility (DX9)",
+        "Antialiasing Fix (DX9)",
+        "Off",
+        "0x00000001",
+        "Flip Indicator",
+        "Disabled",
+        "Frame Rate Limiter - Background Application",
+        "Frame Rate Limiter V3",
+        "GSYNC - Application Mode",
+        "Fullscreen only",
+        "GSYNC - Application Requested State",
+        "Allow",
+        "GSYNC - Application State",
+        "GSYNC - Global Feature",
+        "On",
+        "GSYNC - Global Mode",
+        "GSYNC - Indicator Overlay",
+        "GSYNC - Support Indicator Overlay",
+        "Maximum Pre-Rendered Frames",
+        "Use the 3D application setting",
+        "Prefered Refreshrate",
+        "Triple Buffering",
+        "Ultra Low Latency - CPL State",
+        "Ultra Low Latency - Enabled",
+        "Vertical Sync",
+        "0x60925292",
+        "Vertical Sync - Smooth AFR Behavior",
+        "Vertical Sync - Tear Control",
+        "Standard",
+        "0x96861077",
+        "Vulkan/OpenGL Present Method",
+        "Auto",
+        "0x00000002",
+        "Vulkan/OpenGL Present Method - Flags",
+        "N/A",
+        "Antialiasing - FXAA Enabled",
+        "Antialiasing - FXAA Enabled (predefined by NVIDIA)",
+        "Allowed",
+        "Antialiasing - FXAA Indicator Overlay",
+        "Antialiasing - Gamma Correction",
+        "Antialiasing - Line Gamma",
+        "Default",
+        "0x00000010",
+        "Antialiasing - MFAA Enabled",
+        "Antialiasing - Transparency Multisampling",
+        "Antialiasing - Transparency Supersampling",
+        "Off / Multisampling",
+        "Antialiasing (MSAA) - Behavior Flags",
+        "None",
+        "Antialiasing (MSAA) - Mode",
+        "Application-controlled",
+        "Antialiasing (MSAA) - Setting",
+        "Application-controlled / Off",
+        "Sharpening - Ignore Film Grain",
+        "0.00",
+        "Sharpening - Value",
+        "Driver unavailable",
+        "1 profiles",
+        "926 known (0 in profiles / 1 seen)",
+        "OTA unknown",
+        "v3.0.2.1"
+      ],
+      "shot": "1360 x 860"
+    }
+  ],
+  "elapsedMs": 16156,
+  "filesCreated": [
+    {
+      "name": "game-cyberpunk-2077.nip",
+      "bytes": 2472
+    },
+    {
+      "name": "game-fortnite.nip",
+      "bytes": 2464
+    },
+    {
+      "name": "game-rdr2.nip",
+      "bytes": 1902
+    },
+    {
+      "name": "game-skyrim-se.nip",
+      "bytes": 1524
+    },
+    {
+      "name": "replace-a.nip",
+      "bytes": 1496
+    },
+    {
+      "name": "replace-b.nip",
+      "bytes": 1020
+    },
+    {
+      "name": "settings.xml",
+      "bytes": 1030
+    }
+  ]
+}

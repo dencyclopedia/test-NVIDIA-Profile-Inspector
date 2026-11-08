@@ -1,0 +1,52 @@
+{
+  "case": "nodriver",
+  "version": "2.4.0.4",
+  "machine": "windows-2025",
+  "args": "",
+  "settings": null,
+  "started": "2026-11-08T14:22:55.7620893+00:00",
+  "firstWindowMs": 261,
+  "windowTitlesSeen": [
+    "Error"
+  ],
+  "exitedEarly": false,
+  "workingSetMB": 34.8,
+  "windows": [
+    {
+      "title": "Error",
+      "class": "#32770",
+      "texts": [
+        "OK",
+        "The type initializer for 'nspector.Common.DrsServiceLocator' threw an exception.\r\n\r\n   at nspector.frmDrvSettings..ctor(Boolean showCsnOnly, Boolean skipScan)\r\n   at nspector.Program.Main(String[] args)"
+      ],
+      "shot": "418 x 205"
+    }
+  ],
+  "elapsedMs": 15628,
+  "filesCreated": [
+    {
+      "name": "game-cyberpunk-2077.nip",
+      "bytes": 2472
+    },
+    {
+      "name": "game-fortnite.nip",
+      "bytes": 2464
+    },
+    {
+      "name": "game-rdr2.nip",
+      "bytes": 1902
+    },
+    {
+      "name": "game-skyrim-se.nip",
+      "bytes": 1524
+    },
+    {
+      "name": "replace-a.nip",
+      "bytes": 1496
+    },
+    {
+      "name": "replace-b.nip",
+      "bytes": 1020
+    }
+  ]
+}

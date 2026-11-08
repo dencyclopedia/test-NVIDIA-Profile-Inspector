@@ -1,0 +1,64 @@
+{
+  "case": "mock-import-merge",
+  "version": "v3.0.2.1",
+  "machine": "windows-2022",
+  "args": "-mock -mergeImport npilab-sample.nip",
+  "settings": {},
+  "started": "2026-11-08T14:27:47.7542459+00:00",
+  "firstWindowMs": 514,
+  "windowTitlesSeen": [
+    "Import"
+  ],
+  "exitedEarly": false,
+  "workingSetMB": 72.4,
+  "windows": [
+    {
+      "title": "",
+      "class": "HwndWrapper[nvidiaProfileInspector.exe;;1ea3d785-adae-484b-ab23-442212a3af6e]",
+      "texts": "Confirm action",
+      "shot": "screen 1920 x 1080"
+    },
+    {
+      "title": "Import",
+      "class": "HwndWrapper[nvidiaProfileInspector.exe;;1a05da82-01d5-41b6-bdcd-ec6229a1560e]",
+      "texts": [
+        "Confirm action",
+        "Import",
+        "Profile(s) imported successfully!",
+        "OK"
+      ],
+      "shot": "400 x 191"
+    }
+  ],
+  "elapsedMs": 15168,
+  "filesCreated": [
+    {
+      "name": "game-cyberpunk-2077.nip",
+      "bytes": 2472
+    },
+    {
+      "name": "game-fortnite.nip",
+      "bytes": 2464
+    },
+    {
+      "name": "game-rdr2.nip",
+      "bytes": 1902
+    },
+    {
+      "name": "game-skyrim-se.nip",
+      "bytes": 1524
+    },
+    {
+      "name": "replace-a.nip",
+      "bytes": 1496
+    },
+    {
+      "name": "replace-b.nip",
+      "bytes": 1020
+    },
+    {
+      "name": "settings.xml",
+      "bytes": 1030
+    }
+  ]
+}
