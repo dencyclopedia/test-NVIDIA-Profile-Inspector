@@ -1,0 +1,40 @@
+# nvprofileinspector.com test lab. Runs the Windows matrix on GitHub-hosted runners
+# (no NVIDIA GPU) and commits the evidence to results/<run>/.
+name: lab
+on:
+  workflow_dispatch:
+    inputs:
+      run: { description: "run id (folder under results/)", required: true, default: "run-manual" }
+  push:
+    paths: ["scripts/**", "samples/**", ".github/workflows/lab.yml"]
+permissions: { contents: write }
+env:
+  RUN: ${{ github.event.inputs.run || format('ci-{0}', github.run_number) }}
+jobs:
+  windows:
+    strategy: { fail-fast: false, matrix: { os: [windows-2025, windows-2022] } }
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - name: matrix
+        shell: pwsh
+        run: ./scripts/windows_lab.ps1 -Run $env:RUN -Machine ${{ matrix.os }}
+      - name: strip binaries
+        shell: pwsh
+        run: Get-ChildItem results -Recurse -Include *.exe,*.dll,*.zip | Remove-Item -Force -ErrorAction SilentlyContinue
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with: { name: "res-${{ matrix.os }}", path: results/ }
+  commit:
+    needs: [windows]
+    if: always()
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with: { path: art }
+      - run: |
+          mkdir -p results && for d in art/*/; do cp -r "$d"* results/; done
+          git config user.name "npi-lab"; git config user.email "lab@users.noreply.github.com"
+          git add results && git commit -m "lab results $RUN" && git pull --rebase && git push || echo "nothing to commit"
