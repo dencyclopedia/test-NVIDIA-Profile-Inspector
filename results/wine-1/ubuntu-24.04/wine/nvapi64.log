@@ -1,0 +1,4 @@
+---------- 2026-11-08 15:05:59 ----------
+561.443:0154:0158:info:nvapi64:DXVK-NVAPI v0.9.3 NVAPI gcc 16.2.0 x86_64 release (nvidiaProfileInspector.exe)
+561.504:0154:0158:info:nvapi64:Querying Vulkan entry point from DXGI factory failed, please ensure that DXVK's dxgi.dll (version 2.1 or newer) is present
+561.504:0154:0158:info:nvapi64:<-NvAPI_Initialize: NVIDIA or other suitable device not found or initialization failed

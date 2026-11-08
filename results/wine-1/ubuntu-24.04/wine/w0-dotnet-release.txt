@@ -1,0 +1,4 @@
+
+HKEY_LOCAL_MACHINE\Software\Microsoft\NET Framework Setup\NDP\v4\Full
+    Release    REG_DWORD    0x80eb1
+

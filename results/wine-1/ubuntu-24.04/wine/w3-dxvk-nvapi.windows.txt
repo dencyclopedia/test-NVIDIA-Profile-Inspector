@@ -1,0 +1,14 @@
+     0x800009 (has no name): ("nvidiaprofileinspector.exe" "nvidiaprofileinspector.exe")  1x1+0+0  +0+0
+     0x800008 (has no name): ("nvidiaprofileinspector.exe" "nvidiaprofileinspector.exe")  113x2+3+29  +3+29
+     0x800007 "NVIDIA PROFILE INSPECTOR": ("nvidiaprofileinspector.exe" "nvidiaprofileinspector.exe")  400x201+400+249  +400+249
+     0x800006 "Hidden Window": ("nvidiaprofileinspector.exe" "nvidiaprofileinspector.exe")  1192x716+4+30  +4+30
+     0x800005 "SystemResourceNotifyWindow": ("nvidiaprofileinspector.exe" "nvidiaprofileinspector.exe")  1x1+0+0  +0+0
+     0x800004 "MediaContextNotificationWindow": ("nvidiaprofileinspector.exe" "nvidiaprofileinspector.exe")  1x1+0+0  +0+0
+     0x800001 (has no name): ("nvidiaprofileinspector.exe" "nvidiaprofileinspector.exe")  113x2+3+29  +3+29
+     0x800002 "Default IME": ("nvidiaprofileinspector.exe" "nvidiaprofileinspector.exe")  1x1+0+0  +0+0
+     0x400007 (has no name): ("explorer.exe" "explorer.exe")  1x1+0+0  +0+0
+     0x400006 (has no name): ("explorer.exe" "explorer.exe")  1x1+0+0  +0+0
+     0x400005 (has no name): ("explorer.exe" "explorer.exe")  1x1+0+0  +0+0
+     0x400004 (has no name): ("explorer.exe" "explorer.exe")  1x1+0+0  +0+0
+     0x400002 (has no name): ("explorer.exe" "explorer.exe")  160x20+3+29  +3+29
+     0x400003 "Default IME": ("explorer.exe" "explorer.exe")  1x1+0+0  +0+0
