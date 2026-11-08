@@ -1,0 +1,48 @@
+# nvprofileinspector.com test lab, round 4: safety (official hashes, lookalikes, ClamAV, Procmon), Mark-of-the-Web,
+# updater, package managers, UI export automation, imports, NVPI Revamped.
+name: round4
+on:
+  workflow_dispatch:
+    inputs:
+      run: { description: "run id", required: true, default: "r4-manual" }
+  push:
+    paths: ["scripts/round4_linux.sh", "scripts/round4_windows.ps1", "scripts/lab_common.ps1", ".github/workflows/round4.yml"]
+permissions: { contents: write }
+env:
+  RUN: ${{ github.event.inputs.run || format('r4-{0}', github.run_number) }}
+jobs:
+  linux:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - run: bash scripts/round4_linux.sh "$RUN"
+      - run: find results -type f \( -name '*.exe' -o -name '*.dll' -o -name '*.zip' \) -delete
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with: { name: res-r4-linux, path: "results/${{ env.RUN }}/" }
+  windows:
+    runs-on: windows-2025
+    timeout-minutes: 50
+    steps:
+      - uses: actions/checkout@v4
+      - shell: pwsh
+        run: ./scripts/round4_windows.ps1 -Run $env:RUN -Machine windows-2025
+      - shell: pwsh
+        if: always()
+        run: Get-ChildItem results -Recurse -Include *.exe,*.dll,*.zip,*.pml | Remove-Item -Force -ErrorAction SilentlyContinue
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with: { name: res-r4-windows, path: "results/${{ env.RUN }}/" }
+  commit:
+    needs: [linux, windows]
+    if: always()
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with: { path: art }
+      - run: |
+          mkdir -p "results/$RUN" && for d in art/*/; do cp -r "$d"* "results/$RUN/"; done
+          git config user.name "npi-lab"; git config user.email "lab@users.noreply.github.com"
+          git add results && git commit -m "round4 results $RUN" && git pull --rebase && git push || echo "nothing to commit"
