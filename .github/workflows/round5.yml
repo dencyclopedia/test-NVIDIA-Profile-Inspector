@@ -1,0 +1,26 @@
+# nvprofileinspector.com test lab, round 5: settings location (portable vs %LOCALAPPDATA%), favourites,
+# DisableUpdateCheck.txt, leftovers, classic NVIDIA Inspector 1.9.8.7.
+name: round5
+on:
+  workflow_dispatch:
+    inputs:
+      run: { description: "run id", required: true, default: "r5-manual" }
+  push:
+    paths: ["scripts/round5_windows.ps1", ".github/workflows/round5.yml"]
+permissions: { contents: write }
+env:
+  RUN: ${{ github.event.inputs.run || format('r5-{0}', github.run_number) }}
+jobs:
+  windows:
+    runs-on: windows-2025
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - shell: pwsh
+        run: ./scripts/round5_windows.ps1 -Run $env:RUN -Machine windows-2025
+      - shell: pwsh
+        if: always()
+        run: |
+          Get-ChildItem results -Recurse -Include *.exe,*.dll,*.zip | Remove-Item -Force -ErrorAction SilentlyContinue
+          git config user.name "npi-lab"; git config user.email "lab@users.noreply.github.com"
+          git add results; git commit -m "round5 results $env:RUN"; git pull --rebase; git push
