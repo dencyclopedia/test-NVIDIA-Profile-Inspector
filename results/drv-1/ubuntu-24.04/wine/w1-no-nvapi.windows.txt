@@ -1,0 +1,14 @@
+     0x1000003 (has no name): ("control.exe" "control.exe")  1x1+0+0  +0+0
+     0x1000001 "Wine Mono Installer": ("control.exe" "control.exe")  390x154+605+432  +605+432
+     0x1000002 "Default IME": ("control.exe" "control.exe")  1x1+0+0  +0+0
+     0x600001 "rundll32": ("rundll32.exe" "rundll32.exe")  1192x723+4+23  +4+23
+     0x600002 "Default IME": ("rundll32.exe" "rundll32.exe")  1x1+0+0  +0+0
+     0x1200003 (has no name): ("wineboot.exe" "wineboot.exe")  1x1+0+0  +0+0
+     0x1200001 "Wine": ("wineboot.exe" "wineboot.exe")  300x81+650+469  +650+469
+     0x1200002 "Default IME": ("wineboot.exe" "wineboot.exe")  1x1+0+0  +0+0
+     0x800007 (has no name): ("explorer.exe" "explorer.exe")  1x1+0+0  +0+0
+     0x800006 (has no name): ("explorer.exe" "explorer.exe")  1x1+0+0  +0+0
+     0x800005 (has no name): ("explorer.exe" "explorer.exe")  1x1+0+0  +0+0
+     0x800004 (has no name): ("explorer.exe" "explorer.exe")  1x1+0+0  +0+0
+     0x800002 (has no name): ("explorer.exe" "explorer.exe")  160x20+3+22  +3+22
+     0x800003 "Default IME": ("explorer.exe" "explorer.exe")  1x1+0+0  +0+0

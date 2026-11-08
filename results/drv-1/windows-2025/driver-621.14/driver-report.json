@@ -1,0 +1,945 @@
+{
+  "driver": "621.14",
+  "machine": "windows-2025",
+  "run": "drv-1",
+  "date": "2026-11-08T14:07:06.8757616+00:00",
+  "downloadSeconds": 7.0,
+  "url": "https://us.download.nvidia.com/Windows/621.14/621.14-desktop-win10-win11-64bit-international-dch-whql.exe",
+  "bytes": 1037274832,
+  "sha256": "9867b0c8689972c419885935bb386d999afffa33afd514cadb384ee84efcd3d3",
+  "signature": {
+    "status": "Valid",
+    "signer": "CN=NVIDIA Corporation, OU=2008B9F, O=NVIDIA Corporation, L=Santa Clara, S=California, C=US"
+  },
+  "extracted": true,
+  "topLevel": [
+    {
+      "name": "Display.Driver",
+      "isDir": true,
+      "bytes": 3153861290.0
+    },
+    {
+      "name": "FrameViewSDK",
+      "isDir": true,
+      "bytes": 29936492.0
+    },
+    {
+      "name": "HDAudio",
+      "isDir": true,
+      "bytes": 2551626.0
+    },
+    {
+      "name": "MSVCRT",
+      "isDir": true,
+      "bytes": 40693109.0
+    },
+    {
+      "name": "NvApp",
+      "isDir": true,
+      "bytes": 494507057.0
+    },
+    {
+      "name": "NvApp.MessageBus",
+      "isDir": true,
+      "bytes": 23192097.0
+    },
+    {
+      "name": "NvBackend",
+      "isDir": true,
+      "bytes": 19599658.0
+    },
+    {
+      "name": "NvContainer",
+      "isDir": true,
+      "bytes": 2992676.0
+    },
+    {
+      "name": "NvCpl",
+      "isDir": true,
+      "bytes": 37851859.0
+    },
+    {
+      "name": "NvDLISR",
+      "isDir": true,
+      "bytes": 60208506.0
+    },
+    {
+      "name": "NVI2",
+      "isDir": true,
+      "bytes": 27822940.0
+    },
+    {
+      "name": "NVPCF",
+      "isDir": true,
+      "bytes": 341903.0
+    },
+    {
+      "name": "NvTelemetry",
+      "isDir": true,
+      "bytes": 16882513.0
+    },
+    {
+      "name": "NvVAD",
+      "isDir": true,
+      "bytes": 764576.0
+    },
+    {
+      "name": "PhysX",
+      "isDir": true,
+      "bytes": 210075396.0
+    },
+    {
+      "name": "PPC",
+      "isDir": true,
+      "bytes": 2732562.0
+    },
+    {
+      "name": "ShadowPlay",
+      "isDir": true,
+      "bytes": 25241596.0
+    },
+    {
+      "name": "EULA.txt",
+      "isDir": false,
+      "bytes": 86636.0
+    },
+    {
+      "name": "ListDevices.txt",
+      "isDir": false,
+      "bytes": 435041.0
+    },
+    {
+      "name": "setup.cfg",
+      "isDir": false,
+      "bytes": 89361.0
+    },
+    {
+      "name": "setup.exe",
+      "isDir": false,
+      "bytes": 876776.0
+    }
+  ],
+  "fileCount": 1185,
+  "nvapi": [
+    {
+      "path": "Display.Driver\\nvapi.dll",
+      "bytes": 429984,
+      "version": "32.0.16.2114"
+    },
+    {
+      "path": "Display.Driver\\nvapi64.dll",
+      "bytes": 560200,
+      "version": "32.0.16.2114"
+    }
+  ],
+  "drsNamedFiles": [
+    {
+      "path": "Display.Driver\\nvdrsdb.bin",
+      "bytes": 1510636
+    },
+    {
+      "path": "Display.Driver\\Display.NvContainer\\plugins\\Session\\NvProfileUpdaterPlugin.dll",
+      "bytes": 2187496
+    },
+    {
+      "path": "NvApp\\CEF\\UpdateFrameworkPlugins\\component_profiles.json",
+      "bytes": 20038
+    }
+  ],
+  "infFiles": [
+    "Display.Driver\\nv_dispi.inf",
+    "Display.Driver\\nvaci.inf",
+    "Display.Driver\\nvadi.inf",
+    "Display.Driver\\nvadvi.inf",
+    "Display.Driver\\nvaei.inf",
+    "Display.Driver\\nvaki.inf",
+    "Display.Driver\\nvami.inf",
+    "Display.Driver\\nvbli.inf",
+    "Display.Driver\\nvbydi.inf",
+    "Display.Driver\\nvcvi.inf",
+    "Display.Driver\\nvddi.inf",
+    "Display.Driver\\nvdmi.inf",
+    "Display.Driver\\nvfmi.inf",
+    "Display.Driver\\nvfrwi.inf",
+    "Display.Driver\\nvfsi.inf",
+    "Display.Driver\\nvgbdi.inf",
+    "Display.Driver\\nvgbi.inf",
+    "Display.Driver\\nvhdci.inf",
+    "Display.Driver\\nvhmi.inf",
+    "Display.Driver\\nvhqi.inf",
+    "Display.Driver\\nvini.inf",
+    "Display.Driver\\nvlai.inf",
+    "Display.Driver\\nvlei.inf",
+    "Display.Driver\\nvlgi.inf",
+    "Display.Driver\\nvloi.inf",
+    "Display.Driver\\nvlti.inf",
+    "Display.Driver\\nvmdi.inf",
+    "Display.Driver\\nvmii.inf",
+    "Display.Driver\\nvmoi.inf",
+    "Display.Driver\\nvmsoai.inf",
+    "Display.Driver\\nvmsoi.inf",
+    "Display.Driver\\nvpcdi.inf",
+    "Display.Driver\\nvpmi.inf",
+    "Display.Driver\\nvpni.inf",
+    "Display.Driver\\nvqui.inf",
+    "Display.Driver\\nvrfi.inf",
+    "Display.Driver\\nvrzi.inf",
+    "Display.Driver\\nvsai.inf",
+    "Display.Driver\\nvsmi.inf",
+    "Display.Driver\\nvtfi.inf",
+    "Display.Driver\\nvwii.inf",
+    "Display.Driver\\nvwti.inf",
+    "Display.Driver\\nvxii.inf",
+    "HDAudio\\nvhda.inf",
+    "NVPCF\\nvpcf.inf",
+    "NvVAD\\nvvad.inf",
+    "PPC\\nvppc.inf"
+  ],
+  "profileStringHits": [
+    {
+      "file": "Display.Driver\\dbInstaller.exe",
+      "needle": "nvdrsdb",
+      "enc": "utf16"
+    },
+    {
+      "file": "Display.Driver\\dbInstaller.exe",
+      "needle": "Base Profile",
+      "enc": "utf16"
+    },
+    {
+      "file": "Display.Driver\\DisplayDriver.nvi",
+      "needle": "nvdrsdb",
+      "enc": "ascii"
+    },
+    {
+      "file": "Display.Driver\\NV_DISP.CAT",
+      "needle": "nvdrsdb",
+      "enc": "utf16"
+    },
+    {
+      "file": "Display.Driver\\nv_dispi.inf",
+      "needle": "nvdrsdb",
+      "enc": "ascii"
+    },
+    {
+      "file": "Display.Driver\\nv_dispi.inf",
+      "needle": "Base Profile",
+      "enc": "ascii"
+    },
+    {
+      "file": "Display.Driver\\nvaci.inf",
+      "needle": "nvdrsdb",
+      "enc": "ascii"
+    },
+    {
+      "file": "Display.Driver\\nvaci.inf",
+      "needle": "Base Profile",
+      "enc": "ascii"
+    },
+    {
+      "file": "Display.Driver\\nvadi.inf",
+      "needle": "nvdrsdb",
+      "enc": "ascii"
+    },
+    {
+      "file": "Display.Driver\\nvadi.inf",
+      "needle": "Base Profile",
+      "enc": "ascii"
+    },
+    {
+      "file": "Display.Driver\\nvadvi.inf",
+      "needle": "nvdrsdb",
+      "enc": "ascii"
+    },
+    {
+      "file": "Display.Driver\\nvadvi.inf",
+      "needle": "Base Profile",
+      "enc": "ascii"
+    },
+    {
+      "file": "Display.Driver\\nvaei.inf",
+      "needle": "nvdrsdb",
+      "enc": "ascii"
+    },
+    {
+      "file": "Display.Driver\\nvaki.inf",
+      "needle": "nvdrsdb",
+      "enc": "ascii"
+    },
+    {
+      "file": "Display.Driver\\nvami.inf",
+      "needle": "nvdrsdb",
+      "enc": "ascii"
+    },
+    {
+      "file": "Display.Driver\\nvami.inf",
+      "needle": "Base Profile",
+      "enc": "ascii"
+    },
+    {
+      "file": "Display.Driver\\nvapi_impl.dll",
+      "needle": "nvdrsdb",
+      "enc": "ascii"
+    },
+    {
+      "file": "Display.Driver\\nvapi_impl.dll",
+      "needle": "nvdrsdb",
+      "enc": "utf16"
+    },
+    {
+      "file": "Display.Driver\\nvapi_impl.dll",
+      "needle": "Base Profile",
+      "enc": "utf16"
+    },
+    {
+      "file": "Display.Driver\\nvapi64_impl.dll",
+      "needle": "nvdrsdb",
+      "enc": "ascii"
+    },
+    {
+      "file": "Display.Driver\\nvapi64_impl.dll",
+      "needle": "nvdrsdb",
+      "enc": "utf16"
+    },
+    {
+      "file": "Display.Driver\\nvapi64_impl.dll",
+      "needle": "Base Profile",
+      "enc": "utf16"
+    },
+    {
+      "file": "Display.Driver\\nvbli.inf",
+      "needle": "nvdrsdb",
+      "enc": "ascii"
+    },
+    {
+      "file": "Display.Driver\\nvbli.inf",
+      "needle": "Base Profile",
+      "enc": "ascii"
+    },
+    {
+      "file": "Display.Driver\\nvbydi.inf",
+      "needle": "nvdrsdb",
+      "enc": "ascii"
+    },
+    {
+      "file": "Display.Driver\\nvcpl.dll",
+      "needle": "Base Profile",
+      "enc": "utf16"
+    },
+    {
+      "file": "Display.Driver\\nvcuda32.dll",
+      "needle": "nvdrsdb",
+      "enc": "ascii"
+    },
+    {
+      "file": "Display.Driver\\nvcuda32.dll",
+      "needle": "nvdrsdb",
+      "enc": "utf16"
+    },
+    {
+      "file": "Display.Driver\\nvcuda64.dll",
+      "needle": "nvdrsdb",
+      "enc": "ascii"
+    },
+    {
+      "file": "Display.Driver\\nvcuda64.dll",
+      "needle": "nvdrsdb",
+      "enc": "utf16"
+    },
+    {
+      "file": "Display.Driver\\nvcvi.inf",
+      "needle": "nvdrsdb",
+      "enc": "ascii"
+    },
+    {
+      "file": "Display.Driver\\nvcvi.inf",
+      "needle": "Base Profile",
+      "enc": "ascii"
+    },
+    {
+      "file": "Display.Driver\\nvd3d12sc.dll",
+      "needle": "nvdrsdb",
+      "enc": "ascii"
+    },
+    {
+      "file": "Display.Driver\\nvd3d12sc.dll",
+      "needle": "nvdrsdb",
+      "enc": "utf16"
+    },
+    {
+      "file": "Display.Driver\\nvd3d12scx.dll",
+      "needle": "nvdrsdb",
+      "enc": "ascii"
+    },
+    {
+      "file": "Display.Driver\\nvd3d12scx.dll",
+      "needle": "nvdrsdb",
+      "enc": "utf16"
+    },
+    {
+      "file": "Display.Driver\\nvd3dum.dll",
+      "needle": "nvdrsdb",
+      "enc": "ascii"
+    },
+    {
+      "file": "Display.Driver\\nvd3dum.dll",
+      "needle": "nvdrsdb",
+      "enc": "utf16"
+    },
+    {
+      "file": "Display.Driver\\nvd3dumx.dll",
+      "needle": "nvdrsdb",
+      "enc": "ascii"
+    },
+    {
+      "file": "Display.Driver\\nvd3dumx.dll",
+      "needle": "nvdrsdb",
+      "enc": "utf16"
+    },
+    {
+      "file": "Display.Driver\\nvddi.inf",
+      "needle": "nvdrsdb",
+      "enc": "ascii"
+    },
+    {
+      "file": "Display.Driver\\nvdirectsr.dll",
+      "needle": "Cyberpunk 2077",
+      "enc": "ascii"
+    },
+    {
+      "file": "Display.Driver\\nvdirectsr.dll",
+      "needle": "Red Dead Redemption 2",
+      "enc": "ascii"
+    },
+    {
+      "file": "Display.Driver\\nvdisps.dll",
+      "needle": "Base Profile",
+      "enc": "utf16"
+    },
+    {
+      "file": "Display.Driver\\nvdlist.dll",
+      "needle": "nvdrsdb",
+      "enc": "utf16"
+    },
+    {
+      "file": "Display.Driver\\nvdlistx.dll",
+      "needle": "nvdrsdb",
+      "enc": "utf16"
+    },
+    {
+      "file": "Display.Driver\\nvdmi.inf",
+      "needle": "nvdrsdb",
+      "enc": "ascii"
+    },
+    {
+      "file": "Display.Driver\\nvdmi.inf",
+      "needle": "Base Profile",
+      "enc": "ascii"
+    },
+    {
+      "file": "Display.Driver\\nvdrsdb.bin",
+      "needle": "Cyberpunk 2077",
+      "enc": "utf16"
+    },
+    {
+      "file": "Display.Driver\\nvdrsdb.bin",
+      "needle": "cyberpunk2077.exe",
+      "enc": "utf16"
+    },
+    {
+      "file": "Display.Driver\\nvdrsdb.bin",
+      "needle": "Red Dead Redemption 2",
+      "enc": "utf16"
+    },
+    {
+      "file": "Display.Driver\\nvdrsdb.bin",
+      "needle": "Base Profile",
+      "enc": "utf16"
+    },
+    {
+      "file": "Display.Driver\\nvfmi.inf",
+      "needle": "nvdrsdb",
+      "enc": "ascii"
+    },
+    {
+      "file": "Display.Driver\\nvfmi.inf",
+      "needle": "Base Profile",
+      "enc": "ascii"
+    },
+    {
+      "file": "Display.Driver\\nvfrwi.inf",
+      "needle": "nvdrsdb",
+      "enc": "ascii"
+    },
+    {
+      "file": "Display.Driver\\nvfsi.inf",
+      "needle": "nvdrsdb",
+      "enc": "ascii"
+    },
+    {
+      "file": "Display.Driver\\nvfsi.inf",
+      "needle": "Base Profile",
+      "enc": "ascii"
+    },
+    {
+      "file": "Display.Driver\\nvgames.dll",
+      "needle": "Base Profile",
+      "enc": "utf16"
+    },
+    {
+      "file": "Display.Driver\\nvgbdi.inf",
+      "needle": "nvdrsdb",
+      "enc": "ascii"
+    },
+    {
+      "file": "Display.Driver\\nvgbi.inf",
+      "needle": "nvdrsdb",
+      "enc": "ascii"
+    },
+    {
+      "file": "Display.Driver\\nvgpucomp64.dll",
+      "needle": "nvdrsdb",
+      "enc": "utf16"
+    },
+    {
+      "file": "Display.Driver\\nvhdci.inf",
+      "needle": "nvdrsdb",
+      "enc": "ascii"
+    },
+    {
+      "file": "Display.Driver\\nvhdci.inf",
+      "needle": "Base Profile",
+      "enc": "ascii"
+    },
+    {
+      "file": "Display.Driver\\nvhmi.inf",
+      "needle": "nvdrsdb",
+      "enc": "ascii"
+    },
+    {
+      "file": "Display.Driver\\nvhmi.inf",
+      "needle": "Base Profile",
+      "enc": "ascii"
+    },
+    {
+      "file": "Display.Driver\\nvhqi.inf",
+      "needle": "nvdrsdb",
+      "enc": "ascii"
+    },
+    {
+      "file": "Display.Driver\\nvini.inf",
+      "needle": "nvdrsdb",
+      "enc": "ascii"
+    },
+    {
+      "file": "Display.Driver\\nvlai.inf",
+      "needle": "nvdrsdb",
+      "enc": "ascii"
+    },
+    {
+      "file": "Display.Driver\\nvlai.inf",
+      "needle": "Base Profile",
+      "enc": "ascii"
+    },
+    {
+      "file": "Display.Driver\\nvldumd.dll",
+      "needle": "nvdrsdb",
+      "enc": "ascii"
+    },
+    {
+      "file": "Display.Driver\\nvldumd.dll",
+      "needle": "nvdrsdb",
+      "enc": "utf16"
+    },
+    {
+      "file": "Display.Driver\\nvldumdx.dll",
+      "needle": "nvdrsdb",
+      "enc": "ascii"
+    },
+    {
+      "file": "Display.Driver\\nvldumdx.dll",
+      "needle": "nvdrsdb",
+      "enc": "utf16"
+    },
+    {
+      "file": "Display.Driver\\nvlei.inf",
+      "needle": "nvdrsdb",
+      "enc": "ascii"
+    },
+    {
+      "file": "Display.Driver\\nvlgi.inf",
+      "needle": "nvdrsdb",
+      "enc": "ascii"
+    },
+    {
+      "file": "Display.Driver\\nvloi.inf",
+      "needle": "nvdrsdb",
+      "enc": "ascii"
+    },
+    {
+      "file": "Display.Driver\\nvloi.inf",
+      "needle": "Base Profile",
+      "enc": "ascii"
+    },
+    {
+      "file": "Display.Driver\\nvlti.inf",
+      "needle": "nvdrsdb",
+      "enc": "ascii"
+    },
+    {
+      "file": "Display.Driver\\nvlti.inf",
+      "needle": "Base Profile",
+      "enc": "ascii"
+    },
+    {
+      "file": "Display.Driver\\nvmdi.inf",
+      "needle": "nvdrsdb",
+      "enc": "ascii"
+    },
+    {
+      "file": "Display.Driver\\nvmemmapstorage.dll",
+      "needle": "nvdrsdb",
+      "enc": "ascii"
+    },
+    {
+      "file": "Display.Driver\\nvmemmapstorage.dll",
+      "needle": "nvdrsdb",
+      "enc": "utf16"
+    },
+    {
+      "file": "Display.Driver\\nvmemmapstorageax.dll",
+      "needle": "nvdrsdb",
+      "enc": "ascii"
+    },
+    {
+      "file": "Display.Driver\\nvmemmapstorageax.dll",
+      "needle": "nvdrsdb",
+      "enc": "utf16"
+    },
+    {
+      "file": "Display.Driver\\nvmemmapstorageaxec.dll",
+      "needle": "nvdrsdb",
+      "enc": "ascii"
+    },
+    {
+      "file": "Display.Driver\\nvmemmapstorageaxec.dll",
+      "needle": "nvdrsdb",
+      "enc": "utf16"
+    },
+    {
+      "file": "Display.Driver\\nvmemmapstoragex.dll",
+      "needle": "nvdrsdb",
+      "enc": "ascii"
+    },
+    {
+      "file": "Display.Driver\\nvmemmapstoragex.dll",
+      "needle": "nvdrsdb",
+      "enc": "utf16"
+    },
+    {
+      "file": "Display.Driver\\nvmii.inf",
+      "needle": "nvdrsdb",
+      "enc": "ascii"
+    },
+    {
+      "file": "Display.Driver\\nvmii.inf",
+      "needle": "Base Profile",
+      "enc": "ascii"
+    },
+    {
+      "file": "Display.Driver\\nvmoi.inf",
+      "needle": "nvdrsdb",
+      "enc": "ascii"
+    },
+    {
+      "file": "Display.Driver\\nvmsoai.inf",
+      "needle": "nvdrsdb",
+      "enc": "ascii"
+    },
+    {
+      "file": "Display.Driver\\nvmsoi.inf",
+      "needle": "nvdrsdb",
+      "enc": "ascii"
+    },
+    {
+      "file": "Display.Driver\\nvmsoi.inf",
+      "needle": "Base Profile",
+      "enc": "ascii"
+    },
+    {
+      "file": "Display.Driver\\nvoglv32.dll",
+      "needle": "nvdrsdb",
+      "enc": "utf16"
+    },
+    {
+      "file": "Display.Driver\\nvoglv64.dll",
+      "needle": "nvdrsdb",
+      "enc": "utf16"
+    },
+    {
+      "file": "Display.Driver\\nvopencl32.dll",
+      "needle": "nvdrsdb",
+      "enc": "ascii"
+    },
+    {
+      "file": "Display.Driver\\nvopencl32.dll",
+      "needle": "nvdrsdb",
+      "enc": "utf16"
+    },
+    {
+      "file": "Display.Driver\\nvopencl64.dll",
+      "needle": "nvdrsdb",
+      "enc": "ascii"
+    },
+    {
+      "file": "Display.Driver\\nvopencl64.dll",
+      "needle": "nvdrsdb",
+      "enc": "utf16"
+    },
+    {
+      "file": "Display.Driver\\nvosc.exe",
+      "needle": "nvdrsdb",
+      "enc": "ascii"
+    },
+    {
+      "file": "Display.Driver\\nvosc.exe",
+      "needle": "nvdrsdb",
+      "enc": "utf16"
+    },
+    {
+      "file": "Display.Driver\\nvpcdi.inf",
+      "needle": "nvdrsdb",
+      "enc": "ascii"
+    },
+    {
+      "file": "Display.Driver\\nvpcdi.inf",
+      "needle": "Base Profile",
+      "enc": "ascii"
+    },
+    {
+      "file": "Display.Driver\\nvpmi.inf",
+      "needle": "nvdrsdb",
+      "enc": "ascii"
+    },
+    {
+      "file": "Display.Driver\\nvpni.inf",
+      "needle": "nvdrsdb",
+      "enc": "ascii"
+    },
+    {
+      "file": "Display.Driver\\nvpni.inf",
+      "needle": "Base Profile",
+      "enc": "ascii"
+    },
+    {
+      "file": "Display.Driver\\nvppe.dll",
+      "needle": "nvdrsdb",
+      "enc": "ascii"
+    },
+    {
+      "file": "Display.Driver\\nvppe.dll",
+      "needle": "nvdrsdb",
+      "enc": "utf16"
+    },
+    {
+      "file": "Display.Driver\\nvppex.dll",
+      "needle": "nvdrsdb",
+      "enc": "ascii"
+    },
+    {
+      "file": "Display.Driver\\nvppex.dll",
+      "needle": "nvdrsdb",
+      "enc": "utf16"
+    },
+    {
+      "file": "Display.Driver\\nvpresent64.dll",
+      "needle": "nvdrsdb",
+      "enc": "ascii"
+    },
+    {
+      "file": "Display.Driver\\nvpresent64.dll",
+      "needle": "nvdrsdb",
+      "enc": "utf16"
+    },
+    {
+      "file": "Display.Driver\\nvqui.inf",
+      "needle": "nvdrsdb",
+      "enc": "ascii"
+    },
+    {
+      "file": "Display.Driver\\nvrfi.inf",
+      "needle": "nvdrsdb",
+      "enc": "ascii"
+    },
+    {
+      "file": "Display.Driver\\nvrfi.inf",
+      "needle": "Base Profile",
+      "enc": "ascii"
+    },
+    {
+      "file": "Display.Driver\\nvrzi.inf",
+      "needle": "nvdrsdb",
+      "enc": "ascii"
+    },
+    {
+      "file": "Display.Driver\\nvrzi.inf",
+      "needle": "Base Profile",
+      "enc": "ascii"
+    },
+    {
+      "file": "Display.Driver\\nvsai.inf",
+      "needle": "nvdrsdb",
+      "enc": "ascii"
+    },
+    {
+      "file": "Display.Driver\\nvsmi.inf",
+      "needle": "nvdrsdb",
+      "enc": "ascii"
+    },
+    {
+      "file": "Display.Driver\\nvsvs.dll",
+      "needle": "Base Profile",
+      "enc": "utf16"
+    },
+    {
+      "file": "Display.Driver\\nvtfi.inf",
+      "needle": "nvdrsdb",
+      "enc": "ascii"
+    },
+    {
+      "file": "Display.Driver\\nvtfi.inf",
+      "needle": "Base Profile",
+      "enc": "ascii"
+    },
+    {
+      "file": "Display.Driver\\nvvkscv64.dll",
+      "needle": "nvdrsdb",
+      "enc": "utf16"
+    },
+    {
+      "file": "Display.Driver\\nvwgf2um.dll",
+      "needle": "nvdrsdb",
+      "enc": "utf16"
+    },
+    {
+      "file": "Display.Driver\\nvwgf2umx.dll",
+      "needle": "nvdrsdb",
+      "enc": "utf16"
+    },
+    {
+      "file": "Display.Driver\\nvwii.inf",
+      "needle": "nvdrsdb",
+      "enc": "ascii"
+    },
+    {
+      "file": "Display.Driver\\nvwss.dll",
+      "needle": "Base Profile",
+      "enc": "utf16"
+    },
+    {
+      "file": "Display.Driver\\nvwti.inf",
+      "needle": "nvdrsdb",
+      "enc": "ascii"
+    },
+    {
+      "file": "Display.Driver\\nvxdapix.dll",
+      "needle": "Base Profile",
+      "enc": "utf16"
+    },
+    {
+      "file": "Display.Driver\\nvxii.inf",
+      "needle": "nvdrsdb",
+      "enc": "ascii"
+    },
+    {
+      "file": "Display.Driver\\NvCamera\\NvCamera32.dll",
+      "needle": "nvdrsdb",
+      "enc": "utf16"
+    },
+    {
+      "file": "Display.Driver\\NvCamera\\NvCamera64.dll",
+      "needle": "nvdrsdb",
+      "enc": "utf16"
+    },
+    {
+      "file": "Display.Driver\\NVWMI\\nvWmi64.exe",
+      "needle": "nvdrsdb",
+      "enc": "ascii"
+    },
+    {
+      "file": "NvApp\\CEF\\plugins\\Base\\NvCplPlugin.dll",
+      "needle": "Base Profile",
+      "enc": "ascii"
+    },
+    {
+      "file": "NvApp\\CEF\\plugins\\Base\\NvCplPlugin.dll",
+      "needle": "Base Profile",
+      "enc": "utf16"
+    },
+    {
+      "file": "NvApp\\McpServer\\NvAppCore.dll",
+      "needle": "Cyberpunk 2077",
+      "enc": "ascii"
+    },
+    {
+      "file": "NvApp\\McpServer\\NvAppCore.dll",
+      "needle": "Base Profile",
+      "enc": "ascii"
+    },
+    {
+      "file": "NvApp\\osc\\main.884630096f5b19e6.js",
+      "needle": "Base Profile",
+      "enc": "ascii"
+    },
+    {
+      "file": "NvApp\\Plugins\\aiuser\\McpServerPlugin.dll",
+      "needle": "Cyberpunk 2077",
+      "enc": "ascii"
+    },
+    {
+      "file": "NvApp\\www\\16.2a62c2ca690ca283.js",
+      "needle": "Base Profile",
+      "enc": "ascii"
+    },
+    {
+      "file": "NvApp\\www\\main.2899f0d88e05d1e8.js",
+      "needle": "Base Profile",
+      "enc": "ascii"
+    },
+    {
+      "file": "NvBackend\\fingerprint.db",
+      "needle": "Cyberpunk 2077",
+      "enc": "ascii"
+    },
+    {
+      "file": "NvBackend\\fingerprint.db",
+      "needle": "Red Dead Redemption 2",
+      "enc": "ascii"
+    },
+    {
+      "file": "NvBackend\\NvBackend64.dll",
+      "needle": "Base Profile",
+      "enc": "utf16"
+    },
+    {
+      "file": "NvCpl\\nvcpl.dll",
+      "needle": "Base Profile",
+      "enc": "utf16"
+    },
+    {
+      "file": "NvCpl\\nvxdapix.dll",
+      "needle": "Base Profile",
+      "enc": "utf16"
+    },
+    {
+      "file": "ShadowPlay\\nvspcap.dll",
+      "needle": "Base Profile",
+      "enc": "utf16"
+    },
+    {
+      "file": "ShadowPlay\\nvspcap64.dll",
+      "needle": "Base Profile",
+      "enc": "utf16"
+    }
+  ]
+}

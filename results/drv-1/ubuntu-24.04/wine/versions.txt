@@ -1,0 +1,19 @@
+wine-11.0
+Executing cd /usr/local/bin
+20260125-next - sha256sum: 672a1ff4442e8691a3ffc0e6860137e201a1d1227e9b3044245f1731e9e9837e
+dotnet48 exit=124 seconds=2400
+dxvk-nvapi v0.9.3
+dn/x32:
+total 2280
+drwxr-xr-x 2 runner runner    4096 Oct 30 17:12 .
+drwxr-xr-x 6 runner runner    4096 Oct 30 17:16 ..
+-rwxr-xr-x 1 runner runner 2322446 Oct 30 17:12 nvapi.dll
+
+dn/x64:
+total 13144
+drwxr-xr-x 2 runner runner    4096 Oct 30 17:15 .
+drwxr-xr-x 6 runner runner    4096 Oct 30 17:16 ..
+-rwxr-xr-x 1 runner runner 7184398 Oct 30 17:15 nvapi64-tests.exe
+-rwxr-xr-x 1 runner runner 2080782 Oct 30 17:15 nvapi64.dll
+-rwxr-xr-x 1 runner runner 2760718 Oct 30 17:15 nvofapi64-tests.exe
+-rwxr-xr-x 1 runner runner 1409038 Oct 30 17:15 nvofapi64.dll

@@ -1,0 +1,4 @@
+{
+  "result": "Initialize=-1; DRS_CreateSession=missing; ",
+  "note": "Status codes: 0 = NVAPI_OK, -3 = NVAPI_NO_IMPLEMENTATION / library not initialised, -6 = NVAPI_NVIDIA_DEVICE_NOT_FOUND, -1 = NVAPI_ERROR"
+}
