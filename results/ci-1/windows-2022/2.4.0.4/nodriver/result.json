@@ -1,0 +1,27 @@
+{
+  "case": "nodriver",
+  "version": "2.4.0.4",
+  "machine": "System.Collections.Specialized.OrderedDictionary",
+  "args": "",
+  "settings": null,
+  "started": "2026-11-08T06:04:31.5245655+00:00",
+  "firstWindowMs": 260,
+  "windowTitlesSeen": [
+    "Error"
+  ],
+  "exitedEarly": false,
+  "workingSetMB": 30.8,
+  "windows": [
+    {
+      "title": "Error",
+      "class": "#32770",
+      "texts": [
+        "OK",
+        "The type initializer for 'nspector.Common.DrsServiceLocator' threw an exception.\r\n\r\n   at nspector.frmDrvSettings..ctor(Boolean showCsnOnly, Boolean skipScan)\r\n   at nspector.Program.Main(String[] args)"
+      ],
+      "shot": "420 x 205"
+    }
+  ],
+  "elapsedMs": 15719,
+  "filesCreated": []
+}

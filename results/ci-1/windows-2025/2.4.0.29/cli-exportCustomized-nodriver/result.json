@@ -1,0 +1,27 @@
+{
+  "case": "cli-exportCustomized-nodriver",
+  "version": "2.4.0.29",
+  "machine": "System.Collections.Specialized.OrderedDictionary",
+  "args": "-exportCustomized",
+  "settings": null,
+  "started": "2026-11-08T06:11:02.8254660+00:00",
+  "firstWindowMs": 259,
+  "windowTitlesSeen": [
+    "Error"
+  ],
+  "exitedEarly": false,
+  "workingSetMB": 35.4,
+  "windows": [
+    {
+      "title": "Error",
+      "class": "#32770",
+      "texts": [
+        "OK",
+        "The type initializer for 'nspector.Common.DrsServiceLocator' threw an exception.\r\n\r\n   at nspector.frmDrvSettings..ctor(Boolean showCsnOnly, Boolean skipScan)\r\n   at nspector.Program.Main(String[] args)"
+      ],
+      "shot": "418 x 205"
+    }
+  ],
+  "elapsedMs": 15688,
+  "filesCreated": []
+}

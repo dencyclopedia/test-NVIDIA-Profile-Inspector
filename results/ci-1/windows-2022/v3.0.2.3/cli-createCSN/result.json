@@ -1,0 +1,21 @@
+{
+  "case": "cli-createCSN",
+  "version": "v3.0.2.3",
+  "machine": "System.Collections.Specialized.OrderedDictionary",
+  "args": "-createCSN",
+  "settings": null,
+  "started": "2026-11-08T06:04:01.4134714+00:00",
+  "firstWindowMs": null,
+  "windowTitlesSeen": [],
+  "exitedEarly": true,
+  "exitCode": 0,
+  "exitMs": 258,
+  "windows": [],
+  "elapsedMs": 258,
+  "filesCreated": [
+    {
+      "name": "CustomSettingNames.xml",
+      "bytes": 396384
+    }
+  ]
+}

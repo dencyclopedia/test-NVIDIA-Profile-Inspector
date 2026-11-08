@@ -1,0 +1,201 @@
+[
+  {
+    "version": "v3.0.2.1",
+    "url": "https://github.com/Orbmu2k/nvidiaProfileInspector/releases/download/v3.0.2.1/nvidiaProfileInspector.zip",
+    "zipBytes": 433354,
+    "zipSha256": "88dcf3514111e8de630688467c03c36d8c2a8ad9ebc8073f27c069f82b75bb40",
+    "files": [
+      {
+        "path": "nvidiaProfileInspector.exe",
+        "bytes": 1043456,
+        "sha256": "1ebd8129b3c564bf226291fb3344819fd59668066f0c5e03334a69a04a62859e"
+      },
+      {
+        "path": "nvidiaProfileInspector.exe.config",
+        "bytes": 174,
+        "sha256": "051099983b896673909e01a1f631b6652abb88da95c9f06f3efef4be033091fa"
+      },
+      {
+        "path": "nvidiaProfileInspector.pdb",
+        "bytes": 174352,
+        "sha256": "030ad196f65455d900d82fd3942ba9fadb815ef9c457f3eb69cb94c5540cf0b4"
+      },
+      {
+        "path": "Reference.xml",
+        "bytes": 873663,
+        "sha256": "0ea7b055aee5c543047243d2dd7abdd1b8c6d96f5d2b7bb5fe17be8130e005ef"
+      }
+    ],
+    "exe": {
+      "FileVersion": "3.0.2.1",
+      "ProductVersion": "3.0.2.1",
+      "ProductName": "nvidiaProfileInspector",
+      "CompanyName": "",
+      "FileDescription": "nvidiaProfileInspector",
+      "LegalCopyright": "Copyright 2026",
+      "OriginalFilename": "nvidiaProfileInspector.exe"
+    },
+    "authenticode": {
+      "status": "NotSigned",
+      "message": "The file D:\\a\\test-NVIDIA-Profile-Inspector\\test-NVIDIA-Profile-Inspector\\dl\\npi-v3.0.2.1\\nvidiaProfileInspector.exe is not digitally signed. You cannot run this script on the current system. For more information about running scripts and setting execution policy, see about_Execution_Policies at https://go.microsoft.com/fwlink/?LinkID=135170",
+      "signer": ""
+    },
+    "assembly": {
+      "name": "nvidiaProfileInspector, Version=3.0.2.1, Culture=neutral, PublicKeyToken=null",
+      "arch": "None"
+    },
+    "peMachine": "0x014C",
+    "targetFramework": ".NETFramework,Version=v4.8",
+    "manifestLevel": "requireAdministrator",
+    "defenderScan": "Scan starting...\r\nScan finished.\r\nScanning D:\\a\\test-NVIDIA-Profile-Inspector\\test-NVIDIA-Profile-Inspector\\dl\\npi-v3.0.2.1 found no threats.",
+    "defenderExit": 0
+  },
+  {
+    "version": "v3.0.2.3",
+    "url": "https://github.com/Orbmu2k/nvidiaProfileInspector/releases/download/v3.0.2.3/nvidiaProfileInspector.zip",
+    "zipBytes": 433945,
+    "zipSha256": "e2d12f0956377efd0021bf5b1f63e5b05ecd6732a311274db679dbe598ad4e61",
+    "files": [
+      {
+        "path": "nvidiaProfileInspector.exe",
+        "bytes": 1046016,
+        "sha256": "355e491aa6c9956bed62204533e6b2fd750d4283d118713826f724ea6bc5cd9d"
+      },
+      {
+        "path": "nvidiaProfileInspector.exe.config",
+        "bytes": 174,
+        "sha256": "051099983b896673909e01a1f631b6652abb88da95c9f06f3efef4be033091fa"
+      },
+      {
+        "path": "nvidiaProfileInspector.pdb",
+        "bytes": 174764,
+        "sha256": "555b6ef1390c53f8076fdf82160db7ddaaa02c5536d0540315f2f1824e967da9"
+      },
+      {
+        "path": "Reference.xml",
+        "bytes": 873663,
+        "sha256": "0ea7b055aee5c543047243d2dd7abdd1b8c6d96f5d2b7bb5fe17be8130e005ef"
+      }
+    ],
+    "exe": {
+      "FileVersion": "3.0.2.3",
+      "ProductVersion": "3.0.2.3",
+      "ProductName": "nvidiaProfileInspector",
+      "CompanyName": "",
+      "FileDescription": "nvidiaProfileInspector",
+      "LegalCopyright": "Copyright 2026",
+      "OriginalFilename": "nvidiaProfileInspector.exe"
+    },
+    "authenticode": {
+      "status": "NotSigned",
+      "message": "The file D:\\a\\test-NVIDIA-Profile-Inspector\\test-NVIDIA-Profile-Inspector\\dl\\npi-v3.0.2.3\\nvidiaProfileInspector.exe is not digitally signed. You cannot run this script on the current system. For more information about running scripts and setting execution policy, see about_Execution_Policies at https://go.microsoft.com/fwlink/?LinkID=135170",
+      "signer": ""
+    },
+    "assembly": {
+      "name": "nvidiaProfileInspector, Version=3.0.2.3, Culture=neutral, PublicKeyToken=null",
+      "arch": "None"
+    },
+    "peMachine": "0x014C",
+    "targetFramework": ".NETFramework,Version=v4.8",
+    "manifestLevel": "requireAdministrator",
+    "defenderScan": "Scan starting...\r\nScan finished.\r\nScanning D:\\a\\test-NVIDIA-Profile-Inspector\\test-NVIDIA-Profile-Inspector\\dl\\npi-v3.0.2.3 found no threats.",
+    "defenderExit": 0
+  },
+  {
+    "version": "2.4.0.29",
+    "url": "https://github.com/Orbmu2k/nvidiaProfileInspector/releases/download/2.4.0.29/nvidiaProfileInspector.zip",
+    "zipBytes": 168798,
+    "zipSha256": "75201c28f08da35efa712a816f3e92cb9d0cf76b40dc733323b042352c6e639e",
+    "files": [
+      {
+        "path": "nvidiaProfileInspector.exe",
+        "bytes": 641024,
+        "sha256": "8b9f830bd8d68ede4d54e5959da33cacfd8a2a475ed348f21a0a2e319e3ac806"
+      },
+      {
+        "path": "nvidiaProfileInspector.exe.config",
+        "bytes": 160,
+        "sha256": "9d1ac1797bdefd5c040ed737a213d55c492276b00cb78201a2183c0a2c868749"
+      },
+      {
+        "path": "Reference.xml",
+        "bytes": 255585,
+        "sha256": "512ce2c34d28514730e90369f2e08e9de49d24944c610a5336a7b69c1a2fe35e"
+      }
+    ],
+    "exe": {
+      "FileVersion": "2.4.0.29",
+      "ProductVersion": "2.4.0.29",
+      "ProductName": "NVIDIA Profile Inspector",
+      "CompanyName": "",
+      "FileDescription": "nvidiaProfileInspector",
+      "LegalCopyright": "©2025 by Orbmu2k",
+      "OriginalFilename": "nvidiaProfileInspector.exe"
+    },
+    "authenticode": {
+      "status": "NotSigned",
+      "message": "The file D:\\a\\test-NVIDIA-Profile-Inspector\\test-NVIDIA-Profile-Inspector\\dl\\npi-2.4.0.29\\nvidiaProfileInspector.exe is not digitally signed. You cannot run this script on the current system. For more information about running scripts and setting execution policy, see about_Execution_Policies at https://go.microsoft.com/fwlink/?LinkID=135170",
+      "signer": ""
+    },
+    "assembly": {
+      "name": "nvidiaProfileInspector, Version=2.4.0.29, Culture=neutral, PublicKeyToken=null",
+      "arch": "None"
+    },
+    "peMachine": "0x014C",
+    "targetFramework": ".NETFramework,Version=v4.8.1",
+    "manifestLevel": "requireAdministrator",
+    "defenderScan": "Scan starting...\r\nScan finished.\r\nScanning D:\\a\\test-NVIDIA-Profile-Inspector\\test-NVIDIA-Profile-Inspector\\dl\\npi-2.4.0.29 found no threats.",
+    "defenderExit": 0
+  },
+  {
+    "version": "v2.4.0.35",
+    "url": "https://github.com/Orbmu2k/nvidiaProfileInspector/releases/download/v2.4.0.35/nvidiaProfileInspector.zip",
+    "error": "Response status code does not indicate success: 404 (Not Found)."
+  },
+  {
+    "version": "2.4.0.4",
+    "url": "https://github.com/Orbmu2k/nvidiaProfileInspector/releases/download/2.4.0.4/nvidiaProfileInspector.zip",
+    "zipBytes": 148995,
+    "zipSha256": "9dc8f944dc55c0eca9bb939b1c756a093f8250b6d9db76319bf27ef5fbe4cb83",
+    "files": [
+      {
+        "path": "nvidiaProfileInspector.exe",
+        "bytes": 548352,
+        "sha256": "1233487ea4db928ee062f12b00a6eda01445d001ab55566107234dea4dc65872"
+      },
+      {
+        "path": "nvidiaProfileInspector.exe.config",
+        "bytes": 158,
+        "sha256": "383b8dcb968b6bd0633658d9bb55c4acaf4c85a075aa456904a42d4e4efd5561"
+      },
+      {
+        "path": "Reference.xml",
+        "bytes": 218251,
+        "sha256": "5a31c0500500713efd83160cef3db3f56b807b7c4f7a8b4ee7f4ffe05c676081"
+      }
+    ],
+    "exe": {
+      "FileVersion": "2.4.0.4",
+      "ProductVersion": "2.4.0.4",
+      "ProductName": "NVIDIA Profile Inspector",
+      "CompanyName": "",
+      "FileDescription": "nvidiaProfileInspector",
+      "LegalCopyright": "©2022 by Orbmu2k",
+      "OriginalFilename": "nvidiaProfileInspector.exe"
+    },
+    "authenticode": {
+      "status": "NotSigned",
+      "message": "The file D:\\a\\test-NVIDIA-Profile-Inspector\\test-NVIDIA-Profile-Inspector\\dl\\npi-2.4.0.4\\nvidiaProfileInspector.exe is not digitally signed. You cannot run this script on the current system. For more information about running scripts and setting execution policy, see about_Execution_Policies at https://go.microsoft.com/fwlink/?LinkID=135170",
+      "signer": ""
+    },
+    "assembly": {
+      "name": "nvidiaProfileInspector, Version=2.4.0.4, Culture=neutral, PublicKeyToken=null",
+      "arch": "None"
+    },
+    "peMachine": "0x014C",
+    "targetFramework": ".NETFramework,Version=v4.8",
+    "manifestLevel": "requireAdministrator",
+    "defenderScan": "Scan starting...\r\nScan finished.\r\nScanning D:\\a\\test-NVIDIA-Profile-Inspector\\test-NVIDIA-Profile-Inspector\\dl\\npi-2.4.0.4 found no threats.",
+    "defenderExit": 0
+  }
+]

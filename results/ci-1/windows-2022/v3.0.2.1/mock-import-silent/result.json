@@ -1,0 +1,21 @@
+{
+  "case": "mock-import-silent",
+  "version": "v3.0.2.1",
+  "machine": "System.Collections.Specialized.OrderedDictionary",
+  "args": "-mock -silentImport npilab-sample.nip",
+  "settings": {},
+  "started": "2026-11-08T06:10:01.9837607+00:00",
+  "firstWindowMs": null,
+  "windowTitlesSeen": [],
+  "exitedEarly": true,
+  "exitCode": 0,
+  "exitMs": 529,
+  "windows": [],
+  "elapsedMs": 529,
+  "filesCreated": [
+    {
+      "name": "settings.xml",
+      "bytes": 1030
+    }
+  ]
+}
