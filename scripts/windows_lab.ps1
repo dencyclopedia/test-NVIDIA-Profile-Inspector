@@ -118,6 +118,25 @@ function Set-Search($hwnd, $text) {
   } catch { return "error: $($_.Exception.Message)" }
 }
 
+
+function Select-Row($hwnd, $name) {
+  # Select the settings-list row whose text is $name (walks up to the selectable list item).
+  try {
+    $el = [System.Windows.Automation.AutomationElement]::FromHandle($hwnd)
+    $cond = New-Object System.Windows.Automation.PropertyCondition([System.Windows.Automation.AutomationElement]::NameProperty, $name)
+    $hit = $el.FindFirst([System.Windows.Automation.TreeScope]::Descendants, $cond)
+    if (-not $hit) { return "row-not-found" }
+    $walker = [System.Windows.Automation.TreeWalker]::ControlViewWalker
+    $cur = $hit
+    for ($i = 0; $i -lt 6 -and $cur; $i++) {
+      $p = $null
+      if ($cur.TryGetCurrentPattern([System.Windows.Automation.SelectionItemPattern]::Pattern, [ref]$p)) { $p.Select(); return "selected:$($cur.Current.ControlType.ProgrammaticName)" }
+      $cur = $walker.GetParent($cur)
+    }
+    return "no-selectable-parent"
+  } catch { return "error: $($_.Exception.Message)" }
+}
+
 function Write-Settings($dir, $extra) {
   # Portable settings.xml (NPI reads settings.xml from the working directory first).
   $base = [ordered]@{ WindowTop = 0; WindowLeft = 0; WindowWidth = 1360; WindowHeight = 860; WindowState = 'Normal';
@@ -180,6 +199,7 @@ function Run-Case($ver, $exeDir, $case, $argList, $settings, $wait, $action) {
         $info.shot = Shot (Join-Path $cdir "after-$j.png") $h
         $res["after_$j"] = $info; $j++
       }
+      Shot (Join-Path $cdir 'after-screen.png') ([IntPtr]::Zero) | Out-Null
     }
     Shot (Join-Path $cdir 'screen.png') ([IntPtr]::Zero) | Out-Null
     try { $res.workingSetMB = [math]::Round((Get-Process -Id $p.Id).WorkingSet64 / 1MB, 1) } catch {}
@@ -208,26 +228,26 @@ function Run-Case($ver, $exeDir, $case, $argList, $settings, $wait, $action) {
 }
 
 # ---------- machine facts ----------
-$machine = [ordered]@{ machine = $Machine; run = $Run; date = (Get-Date).ToString('o') }
+$mf = [ordered]@{ machine = $Machine; run = $Run; date = (Get-Date).ToString('o') }
 $os = Get-CimInstance Win32_OperatingSystem
-$machine.os = "$($os.Caption) $($os.Version) build $($os.BuildNumber)"
-$machine.cpu = (Get-CimInstance Win32_Processor | Select-Object -First 1).Name
-$machine.ramGB = [math]::Round($os.TotalVisibleMemorySize / 1MB, 1)
-$machine.gpus = @(Get-CimInstance Win32_VideoController | ForEach-Object { "$($_.Name) | driver $($_.DriverVersion)" })
-$machine.netFxRelease = (Get-ItemProperty 'HKLM:\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full' -ErrorAction SilentlyContinue).Release
-$machine.netFxVersion = (Get-ItemProperty 'HKLM:\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full' -ErrorAction SilentlyContinue).Version
-$machine.nvapi64 = Test-Path "$env:WINDIR\System32\nvapi64.dll"
-$machine.nvapi32 = Test-Path "$env:WINDIR\SysWOW64\nvapi.dll"
-$machine.drsFolder = Test-Path "$env:ProgramData\NVIDIA Corporation\Drs"
-$machine.isAdmin = ([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole]::Administrator)
-$machine.uacEnableLUA = (Get-ItemProperty 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System' -ErrorAction SilentlyContinue).EnableLUA
-$machine.resolutionBefore = "$([System.Windows.Forms.Screen]::PrimaryScreen.Bounds.Width)x$([System.Windows.Forms.Screen]::PrimaryScreen.Bounds.Height)"
-$machine.setResolution = [W]::SetRes(1920, 1080)
+$mf.os = "$($os.Caption) $($os.Version) build $($os.BuildNumber)"
+$mf.cpu = (Get-CimInstance Win32_Processor | Select-Object -First 1).Name
+$mf.ramGB = [math]::Round($os.TotalVisibleMemorySize / 1MB, 1)
+$mf.gpus = @(Get-CimInstance Win32_VideoController | ForEach-Object { "$($_.Name) | driver $($_.DriverVersion)" })
+$mf.netFxRelease = (Get-ItemProperty 'HKLM:\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full' -ErrorAction SilentlyContinue).Release
+$mf.netFxVersion = (Get-ItemProperty 'HKLM:\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full' -ErrorAction SilentlyContinue).Version
+$mf.nvapi64 = Test-Path "$env:WINDIR\System32\nvapi64.dll"
+$mf.nvapi32 = Test-Path "$env:WINDIR\SysWOW64\nvapi.dll"
+$mf.drsFolder = Test-Path "$env:ProgramData\NVIDIA Corporation\Drs"
+$mf.isAdmin = ([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole]::Administrator)
+$mf.uacEnableLUA = (Get-ItemProperty 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System' -ErrorAction SilentlyContinue).EnableLUA
+$mf.resolutionBefore = "$([System.Windows.Forms.Screen]::PrimaryScreen.Bounds.Width)x$([System.Windows.Forms.Screen]::PrimaryScreen.Bounds.Height)"
+$mf.setResolution = [W]::SetRes(1920, 1080)
 Start-Sleep -Seconds 2
-$machine.resolutionAfter = "$([System.Windows.Forms.Screen]::PrimaryScreen.Bounds.Width)x$([System.Windows.Forms.Screen]::PrimaryScreen.Bounds.Height)"
-try { $mp = Get-MpComputerStatus; $machine.defender = [ordered]@{ AMServiceEnabled = $mp.AMServiceEnabled; RealTimeProtectionEnabled = $mp.RealTimeProtectionEnabled; AntivirusSignatureVersion = $mp.AntivirusSignatureVersion } } catch { $machine.defender = "unavailable: $($_.Exception.Message)" }
-Save-Json $machine (Join-Path $out 'machine.json')
-Write-Host ($machine | ConvertTo-Json -Depth 4)
+$mf.resolutionAfter = "$([System.Windows.Forms.Screen]::PrimaryScreen.Bounds.Width)x$([System.Windows.Forms.Screen]::PrimaryScreen.Bounds.Height)"
+try { $mp = Get-MpComputerStatus; $mf.defender = [ordered]@{ AMServiceEnabled = $mp.AMServiceEnabled; RealTimeProtectionEnabled = $mp.RealTimeProtectionEnabled; AntivirusSignatureVersion = $mp.AntivirusSignatureVersion } } catch { $mf.defender = "unavailable: $($_.Exception.Message)" }
+Save-Json $mf (Join-Path $out 'machine.json')
+Write-Host ($mf | ConvertTo-Json -Depth 4)
 
 # ---------- downloads ----------
 $versions = @('v3.0.2.1', 'v3.0.2.3', '2.4.0.29', 'v2.4.0.35', '2.4.0.4')
@@ -305,6 +325,34 @@ foreach ($v in $dirs.Keys) {
   $all += Run-Case $v $dir 'mock-import-then-modified' @('-mock', '-silentImport', 'npilab-sample.nip') @{} 14 { param($h, $p) Invoke-ByHelp $h 'View Modified Profiles' }
   $all += Run-Case $v $dir 'mock-update-check-on' @('-mock') @{ DisableUpdateCheck = 'false' } 20 $null
   $all += Run-Case $v $dir 'mock-software-render' @('-mock', '-useSoftwareRendering', '-disableTransparency') @{} 12 $null
+
+  $all += Run-Case $v $dir 'mock-search-hexid' @('-mock') @{} 12 { param($h, $p) Set-Search $h '0x10835002' }
+  $all += Run-Case $v $dir 'mock-search-fps' @('-mock') @{} 12 { param($h, $p) Set-Search $h 'fps' }
+  $all += Run-Case $v $dir 'mock-search-vsync' @('-mock') @{} 12 { param($h, $p) Set-Search $h 'vsync' }
+  $all += Run-Case $v $dir 'mock-search-preset' @('-mock') @{ SettingSourceReference = 'true'; SettingSourceDriver = 'true' } 12 { param($h, $p) Set-Search $h 'preset' }
+  $all += Run-Case $v $dir 'mock-biteditor-ao' @('-mock') @{} 12 { param($h, $p) $a = Select-Row $h 'Ambient Occlusion - Compatibility'; Start-Sleep 1; $b = Invoke-ByHelp $h 'Open the Bit Value Editor'; "$a ; $b" }
+  $all += Run-Case $v $dir 'mock-row-frl' @('-mock') @{} 12 { param($h, $p) Set-Search $h 'Frame Rate Limiter V3' | Out-Null; Start-Sleep 1; Select-Row $h 'Frame Rate Limiter V3' }
+  $all += Run-Case $v $dir 'mock-copy-clipboard' @('-mock') @{} 12 { param($h, $p) $r = Invoke-ByHelp $h 'Copy settings to clipboard'; Start-Sleep 1; $c = Get-Clipboard -Raw; if ($c) { [IO.File]::WriteAllText((Join-Path $out "$v\mock-copy-clipboard\clipboard.txt"), $c) }; "$r ; clipboard chars=$($c.Length)" }
+  $all += Run-Case $v $dir 'mock-addapp' @('-mock') @{} 12 { param($h, $p) Invoke-ByHelp $h 'Add Application' }
+  $all += Run-Case $v $dir 'mock-modified-empty' @('-mock') @{} 12 { param($h, $p) Invoke-ByHelp $h 'View Modified Profiles' }
+  $all += Run-Case $v $dir 'mock-import-button' @('-mock') @{} 12 { param($h, $p) Invoke-ByHelp $h 'Import profiles from file' }
+  $all += Run-Case $v $dir 'mock-forward-import' @('-mock') @{ WindowLeft = 120 } 20 {
+    param($h, $p)
+    # A second process with a .nip forwards the file to the running instance (single-instance import).
+    $work2 = Split-Path -Parent $p.Path
+    $q = Start-Process -FilePath $p.Path -ArgumentList @('-mock', (Join-Path $work2 'npilab-sample.nip')) -WorkingDirectory $work2 -PassThru
+    Start-Sleep -Seconds 6
+    $second = if ($q.HasExited) { "second-exited:$($q.ExitCode)" } else { 'second-running' }
+    "forwarded ; $second"
+  }
+  $all += Run-Case $v $dir 'mock-forward-import-modified' @('-mock') @{ WindowLeft = 120 } 22 {
+    param($h, $p)
+    $work2 = Split-Path -Parent $p.Path
+    $q = Start-Process -FilePath $p.Path -ArgumentList @('-mock', '-silentImport', (Join-Path $work2 'npilab-sample.nip')) -WorkingDirectory $work2 -PassThru
+    Start-Sleep -Seconds 6
+    $m = Invoke-ByHelp $h 'View Modified Profiles'
+    "silent-forward ; modified=$m"
+  }
 }
 Save-Json $all (Join-Path $out 'cases.json')
 Write-Host "done: $($all.Count) cases"
