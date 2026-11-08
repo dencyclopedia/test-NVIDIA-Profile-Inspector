@@ -13,11 +13,14 @@ https://github.com/Orbmu2k/nvidiaProfileInspector/releases during each run.
 | `scripts/round4_windows.ps1` | Round 4 on Windows: official hashes for every release asset, Mark-of-the-Web, updater channels, Procmon trace of network and registry access, package-manager builds (winget, Chocolatey), import tolerance, NVPI Revamped |
 | `scripts/round4_linux.sh` | Round 4 on Ubuntu: ClamAV scan of every official asset, lookalike download-site audit |
 | `scripts/driver_lab.ps1` | Driver-package lab: downloads NVIDIA's public driver package, lists its contents, probes the bundled NVAPI without a GPU, records what the installer and `pnputil` do on a machine with no NVIDIA GPU, runs NPI against the package DLL |
-| `scripts/linux_wine.sh` | Wine lab: .NET 4.8 under Wine, then NPI with and without DXVK-NVAPI |
+| `scripts/linux_wine.sh` | Wine lab: .NET 4.8 under Wine (Mono/Gecko prompts skipped), then NPI without NVAPI, in demo mode and with DXVK-NVAPI |
+| `scripts/round5_windows.ps1` | Round 5: where NPI keeps its settings (portable vs `%LOCALAPPDATA%`, working-directory rule), favourites, `DisableUpdateCheck.txt` and network, leftovers, classic NVIDIA Inspector 1.9.8.7 |
 | `samples/*.nip` | Hand-written profiles used as import inputs (`npilab-sample.nip`, four game profiles, `replace-a/b.nip` for Replace vs Merge) |
 | `.github/workflows/lab.yml` | Windows UI/CLI lab on Windows Server 2025 and 2022 (runs `ci-*`) |
 | `.github/workflows/round4.yml` | Round 4 on Windows and Ubuntu (runs `r4-*`) |
-| `.github/workflows/driver-lab.yml` | Driver-package lab on Windows and Wine lab on Ubuntu (runs `drv-*`) |
+| `.github/workflows/driver-lab.yml` | Driver-package lab on Windows (runs `drv-*`; `drv-1`/`drv-2` also ran the Wine lab) |
+| `.github/workflows/wine-lab.yml` | Wine lab on Ubuntu (runs `wine-*`) |
+| `.github/workflows/round5.yml` | Round 5 on Windows (runs `r5-*`) |
 | `results/<run>/` | Raw output of each run (JSON, CSV, logs, screenshots), committed by the workflow |
 
 Limits: these machines have no NVIDIA GPU and no NVIDIA driver. They prove file facts, start-up
