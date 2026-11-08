@@ -1,0 +1,21 @@
+{
+  "case": "mock-exportCustomized",
+  "version": "v3.0.2.1",
+  "machine": "windows-2025",
+  "args": "-mock -exportCustomized",
+  "settings": null,
+  "started": "2026-11-08T06:22:18.3862459+00:00",
+  "firstWindowMs": null,
+  "windowTitlesSeen": [],
+  "exitedEarly": true,
+  "exitCode": 0,
+  "exitMs": 511,
+  "windows": [],
+  "elapsedMs": 511,
+  "filesCreated": [
+    {
+      "name": "CustomProfiles_2026-11-08_06-22-18.nip",
+      "bytes": 474
+    }
+  ]
+}

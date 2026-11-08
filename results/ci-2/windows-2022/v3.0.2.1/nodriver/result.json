@@ -1,0 +1,33 @@
+{
+  "case": "nodriver",
+  "version": "v3.0.2.1",
+  "machine": "windows-2022",
+  "args": "",
+  "settings": {},
+  "started": "2026-11-08T06:17:33.5561572+00:00",
+  "firstWindowMs": 262,
+  "windowTitlesSeen": [
+    "NVIDIA PROFILE INSPECTOR"
+  ],
+  "exitedEarly": false,
+  "workingSetMB": 71.5,
+  "windows": [
+    {
+      "title": "NVIDIA PROFILE INSPECTOR",
+      "class": "HwndWrapper[nvidiaProfileInspector.exe;;c5f60c66-c120-4a91-8418-78914784d1c2]",
+      "texts": [
+        "NVIDIA PROFILE INSPECTOR",
+        "No compatible NVIDIA Driver was detected on your system. Your NVIDIA GPU might be disabled.",
+        "OK"
+      ],
+      "shot": "400 x 203"
+    }
+  ],
+  "elapsedMs": 15677,
+  "filesCreated": [
+    {
+      "name": "settings.xml",
+      "bytes": 1030
+    }
+  ]
+}
