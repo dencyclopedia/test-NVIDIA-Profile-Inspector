@@ -1,0 +1,14 @@
+{
+  "exitCode": -436207360,
+  "seconds": 55.0,
+  "logs": [],
+  "pnputilInf": "nv_dispi.inf",
+  "pnputil": "Microsoft PnP Utility\r\n\r\nAdding driver package:  nv_dispi.inf\r\nDriver package added successfully.\r\nPublished Name:         oem12.inf\r\n\r\nTotal driver packages:  1\r\nAdded driver packages:  1",
+  "afterServices": [
+    "InventorySvc=Stopped",
+    "nvagent=Running",
+    "SessionEnv=Running"
+  ],
+  "afterSystemNvapi64": false,
+  "afterDrsFolder": false
+}

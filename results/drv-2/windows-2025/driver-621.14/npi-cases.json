@@ -1,0 +1,12 @@
+[
+  {
+    "case": "npi-with-package-nvapi64",
+    "exited": false,
+    "title": ""
+  },
+  {
+    "case": "npi-after-install-attempts",
+    "exited": false,
+    "title": ""
+  }
+]
