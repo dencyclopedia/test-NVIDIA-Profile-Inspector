@@ -1,0 +1,57 @@
+{
+  "case": "r4-import-unknown-id",
+  "version": "v3.0.2.1",
+  "machine": "windows-2025",
+  "args": "-mock unknown-id.nip",
+  "settings": {},
+  "started": "2026-11-08T14:31:22.1965214+00:00",
+  "firstWindowMs": 514,
+  "windowTitlesSeen": [
+    "Import"
+  ],
+  "exitedEarly": false,
+  "workingSetMB": 74.5,
+  "windows": [
+    {
+      "title": "Import",
+      "class": "HwndWrapper[nvidiaProfileInspector.exe;;3a69fc16-da03-4b24-834e-4bf7ed88869e]",
+      "texts": [
+        "Import",
+        "Profile(s) imported successfully!",
+        "OK"
+      ],
+      "shot": "400 x 191"
+    }
+  ],
+  "elapsedMs": 15723,
+  "filesCreated": [
+    {
+      "name": "game-cyberpunk-2077.nip",
+      "bytes": 2472
+    },
+    {
+      "name": "game-fortnite.nip",
+      "bytes": 2464
+    },
+    {
+      "name": "game-rdr2.nip",
+      "bytes": 1902
+    },
+    {
+      "name": "game-skyrim-se.nip",
+      "bytes": 1524
+    },
+    {
+      "name": "replace-a.nip",
+      "bytes": 1496
+    },
+    {
+      "name": "replace-b.nip",
+      "bytes": 1020
+    },
+    {
+      "name": "settings.xml",
+      "bytes": 1030
+    }
+  ]
+}

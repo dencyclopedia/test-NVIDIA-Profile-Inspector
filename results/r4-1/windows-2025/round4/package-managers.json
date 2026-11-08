@@ -1,0 +1,85 @@
+{
+  "chocoInfo": "Chocolatey v2.7.5\r\nnvidia-profile-inspector 3.0.2.1 [Approved]\r\n Title: NVIDIA Profile Inspector | Published: 7/18/2026\r\n Package approved as a trusted package on Jul 18 2026 04:59:07.\r\n Package testing status: Passing on Jul 18 2026 03:51:06.\r\n Number of Downloads: 18142 | Downloads for this version: 8\r\n Package url https://community.chocolatey.org/packages/nvidia-profile-inspector/3.0.2.1\r\n Chocolatey Package Source: https://github.com/jtcmedia/chocolatey-packages/tree/master/nvidia-profile-inspector\r\n Package Checksum: 'VHkPLcc0IdBNYL05qo8rOC7+Hp8keA1hoBjF163Bvxk84i0c5WZDjvodly699nY2dW93B0vTS0QVHCGIoNjiMA==' (SHA512)\r\n Tags: nvidia-profile-inspector nvidia driver gpu inspector game profile profiles graphics portable\r\n Software Site: https://github.com/Orbmu2k/nvidiaProfileInspector\r\n Software License: https://github.com/Orbmu2k/nvidiaProfileInspector/blob/master/LICENSE\r\n Software Source: https://github.com/Orbmu2k/nvidiaProfileInspector\r\n Documentation: https://wiki.step-project.com/Guide:NVIDIA_Inspector\r\n Issues: https://github.com/Orbmu2k/nvidiaProfileInspector/issues\r\n Summary: This tool is used for modifying game profiles inside the internal driver database of the nvidia driver.\r\n Description: **NVIDIA Profile Inspector**\r\n  \r\n  This tool is used for modifying game profiles inside the internal driver database of the nvidia driver.\r\n  All game profiles are provided by the nvidia driver, but you can add your own profiles for games missing in the driver database.\r\n  You also have access to hidden and undocumented settings, which are not provided by the drivers control panel.\r\n  \r\n  For more information how to use this tool, you can find some very good wikis here:\r\n  * https://wiki.step-project.com/Guide:NVIDIA_Inspector\r\n  * https://www.pcgamingwiki.com/wiki/Nvidia_Profile_Inspector\r\n  \r\n  ## Package Parameters\r\n  \r\n  The following package parameters can be set:\r\n  \r\n   * `/NoDesktopIcon` - Don't add an icon to the desktop.\r\n  \r\n  These parameters can be passed to the installer with the use of `-params`.\r\n  For example: `choco install nvidia-profile-inspector -params '\"/NoDesktopIcon\"'`.\r\n Release Notes: https://github.com/Orbmu2k/nvidiaProfileInspector/releases/tag/v3.0.2.1\r\n\r\n1 packages found.\r\n\r\nDid you know Pro / Business automatically syncs with Programs and\r\n Features? Learn more about Package Synchronizer at\r\n https://chocolatey.org/compare",
+  "chocoInfoOld": "Chocolatey v2.7.5\r\nnvidia-inspector 2.3.0.20200706 [Approved]\r\n Title: [Deprecated] NVIDIA Inspector | Published: 7/8/2020\r\n Package approved by mwallner on Jul 11 2020 18:21:04.\r\n Package testing status: Passing on Jul 08 2020 03:43:28.\r\n Number of Downloads: 3269 | Downloads for this version: 2074\r\n Package url https://community.chocolatey.org/packages/nvidia-inspector/2.3.0.20200706\r\n Chocolatey Package Source: https://github.com/jtcmedia/chocolatey-packages/tree/master/nvidia-inspector\r\n Package Checksum: 'ZoTfx3w9uWmmQZ5DGtvanafFdNE5WoYpPYos2O4e39obehac2bQniWZB2KkpVbMrJDvNMuivZQqIBrlQ2W3wmQ==' (SHA512)\r\n Tags: nvidia-profile-inspector nvidia driver gpu inspector game profile profiles graphics portable\r\n Software Site: https://github.com/Orbmu2k/nvidiaProfileInspector\r\n Software License: https://github.com/Orbmu2k/nvidiaProfileInspector/blob/master/LICENSE\r\n Software Source: https://github.com/Orbmu2k/nvidiaProfileInspector\r\n Documentation: https://wiki.step-project.com/Guide:NVIDIA_Inspector\r\n Issues: https://github.com/Orbmu2k/nvidiaProfileInspector/issues\r\n Summary: This tool is used for modifying game profiles inside the internal driver database of the nvidia driver.\r\n Description: This package is deprecated. Use the **nvidia-profile-inspector package** instead.\r\n  \r\n  This package exists only for backward compatibility to provide a transitional dummy package for existing users and scripts which may still use this package ID.\r\n Release Notes: ### New users\r\n  \r\n  * Do not install nvidia-inspector (this package). Install **nvidia-profile-inspector** instead.\r\n  \r\n  ### Existing users\r\n  \r\n  * Updating this package will install the most recent version of the **nvidia-profile-inspector** chocolatey package. Please update any links, dependencies, or scripts that reference this package to the package name **nvidia-profile-inspector**.\r\n  \r\n  ### Cleanup\r\n  \r\n  * Remove package: `choco uninstall nvidia-inspector --all-versions --whatif`\r\n\r\n1 packages found.",
+  "chocoFiles": [
+    {
+      "path": "C:\\ProgramData\\chocolatey\\lib\\nvidia-profile-inspector\\nvidia-profile-inspector.nupkg",
+      "bytes": 430682,
+      "sha256": "2319dd8f90af939e39d92cfaea69ce66e4c16b644ed06a2c9675befe153d56ef",
+      "version": null
+    },
+    {
+      "path": "C:\\ProgramData\\chocolatey\\lib\\nvidia-profile-inspector\\nvidia-profile-inspector.nuspec",
+      "bytes": 2433,
+      "sha256": "b9e1451b6121548fde968ccd8d7faf3694213bedc6355009ef465182122f96fc",
+      "version": null
+    },
+    {
+      "path": "C:\\ProgramData\\chocolatey\\lib\\nvidia-profile-inspector\\nvidiaProfileInspector.zip.txt",
+      "bytes": 355,
+      "sha256": "87e42e2bb3d58a299d4e2643a8b0edc8322ca48245b65df88d3ef21e5f1b826e",
+      "version": null
+    },
+    {
+      "path": "C:\\ProgramData\\chocolatey\\lib\\nvidia-profile-inspector\\legal\\LICENSE.txt",
+      "bytes": 1188,
+      "sha256": "5858d8a9cf87118e33d75096d765af5fe97f1092f5de537f01502229cb714124",
+      "version": null
+    },
+    {
+      "path": "C:\\ProgramData\\chocolatey\\lib\\nvidia-profile-inspector\\legal\\VERIFICATION.txt",
+      "bytes": 743,
+      "sha256": "fa30a33857752e9120c0d48cc97bb2ce7217567008aac0b5d8ca0c9a5dec7566",
+      "version": null
+    },
+    {
+      "path": "C:\\ProgramData\\chocolatey\\lib\\nvidia-profile-inspector\\tools\\chocolateyinstall.ps1",
+      "bytes": 691,
+      "sha256": "a42fca856d4a10b8ccdf4308c33b68475a68cd2b699dbfea9dedda2d015f3337",
+      "version": null
+    },
+    {
+      "path": "C:\\ProgramData\\chocolatey\\lib\\nvidia-profile-inspector\\tools\\chocolateyuninstall.ps1",
+      "bytes": 151,
+      "sha256": "0bdff7189c4079d0a1d9c6426961a34709a9fbbfca748f2f48b3270e56ac3a18",
+      "version": null
+    },
+    {
+      "path": "C:\\ProgramData\\chocolatey\\lib\\nvidia-profile-inspector\\tools\\nvidiaProfileInspector.exe",
+      "bytes": 1043456,
+      "sha256": "1ebd8129b3c564bf226291fb3344819fd59668066f0c5e03334a69a04a62859e",
+      "version": "3.0.2.1"
+    },
+    {
+      "path": "C:\\ProgramData\\chocolatey\\lib\\nvidia-profile-inspector\\tools\\nvidiaProfileInspector.exe.config",
+      "bytes": 174,
+      "sha256": "051099983b896673909e01a1f631b6652abb88da95c9f06f3efef4be033091fa",
+      "version": null
+    },
+    {
+      "path": "C:\\ProgramData\\chocolatey\\lib\\nvidia-profile-inspector\\tools\\nvidiaProfileInspector.pdb",
+      "bytes": 174352,
+      "sha256": "030ad196f65455d900d82fd3942ba9fadb815ef9c457f3eb69cb94c5540cf0b4",
+      "version": null
+    },
+    {
+      "path": "C:\\ProgramData\\chocolatey\\lib\\nvidia-profile-inspector\\tools\\Reference.xml",
+      "bytes": 873663,
+      "sha256": "0ea7b055aee5c543047243d2dd7abdd1b8c6d96f5d2b7bb5fe17be8130e005ef",
+      "version": null
+    }
+  ],
+  "wingetShow": "- \r\n                                                                                                                        \r\n\r\n  ████████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒  1024 KB / 3.73 MB\r\n  ████████████████▒▒▒▒▒▒▒▒▒▒▒▒▒▒  2.00 MB / 3.73 MB\r\n  ████████████████████████▒▒▒▒▒▒  3.00 MB / 3.73 MB\r\n  ██████████████████████████████  3.73 MB / 3.73 MB\r\n                                                                                                                        \r\n\r\n  ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒  0%\r\n  ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒  0%\r\n  ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒  1%\r\n  ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒  2%\r\n  ██████████████████████▒▒▒▒▒▒▒▒  75%\r\n  █████████████████████████▒▒▒▒▒  84%\r\n  ███████████████████████████▒▒▒  92%\r\n  ███████████████████████████▒▒▒  92%\r\n  ██████████████████████████████  100%\r\n                                                                                                                        \r\nThe `msstore` source requires that you view the following agreements before using.\r\nTerms of Transaction: https://aka.ms/microsoft-store-terms-of-transaction\r\nThe source requires the current machine's 2-letter geographic region to be sent to the backend service to function properly (ex. \"US\").\r\n\r\nFound NVIDIA Profile Inspector [Orbmu2k.nvidiaProfileInspector]\r\nVersion: 3.0.2.3\r\nPublisher: Orbmu2k\r\nPublisher Url: https://github.com/Orbmu2k\r\nPublisher Support Url: https://github.com/Orbmu2k/nvidiaProfileInspector/issues\r\nAuthor: Orbmu2k\r\nMoniker: nvpi\r\nDescription: NVIDIA Profile Inspector is a tool for inspecting and editing Nvidia driver profiles, allowing users to tweak settings for gaming, overclocking, and driver management on Windows.\r\nHomepage: https://github.com/Orbmu2k/nvidiaProfileInspector\r\nLicense: MIT\r\nLicense Url: https://github.com/Orbmu2k/nvidiaProfileInspector/blob/master/LICENSE\r\nCopyright: Copyright (c) Orbmu2k\r\nRelease Notes Url: https://github.com/Orbmu2k/nvidiaProfileInspector/releases/tag/v3.0.2.3\r\nInstallation Notes:\r\n  Run 'nvpi' from any terminal to launch NVIDIA Profile Inspector.\r\n  WinGet portable packages do not create desktop or Start Menu shortcuts.\r\n  Package maintained by AmirulAndalib (https://github.com/AmirulAndalib).\r\nTags:\r\n  nvidia\r\n  gpu\r\n  driver\r\n  profile\r\n  inspector\r\n  gaming\r\n  overclock\r\nInstaller:\r\n  Installer Type: portable (zip)\r\n  Installer Url: https://github.com/Orbmu2k/nvidiaProfileInspector/releases/download/v3.0.2.3/nvidiaProfileInspector.zip\r\n  Installer SHA256: e2d12f0956377efd0021bf5b1f63e5b05ecd6732a311274db679dbe598ad4e61\r\n  Release Date: 2026-10-13\r\n  Offline Distribution Supported: true",
+  "wingetFiles": [
+    {
+      "name": "NVIDIA Profile Inspector_3.0.2.3_X64_portable_en-US.yaml",
+      "bytes": 2311,
+      "sha256": "982f3213d6be56d09a3ed7593e5d77d2989504ee51c75421bef91ed3684f6d6a"
+    },
+    {
+      "name": "NVIDIA Profile Inspector_3.0.2.3_X64_portable_en-US.zip",
+      "bytes": 433945,
+      "sha256": "e2d12f0956377efd0021bf5b1f63e5b05ecd6732a311274db679dbe598ad4e61"
+    }
+  ]
+}

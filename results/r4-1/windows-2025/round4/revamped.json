@@ -1,0 +1,54 @@
+{
+  "tag": "v7.3.2.0",
+  "published": "2026-10-21T16:55:27Z",
+  "asset": "NVPI-R.zip",
+  "bytes": 689104,
+  "sha256": "febb6e1dda9b420e918aeb54deaf176612a5f2371b0287079bd58a5103757d47",
+  "files": [
+    {
+      "path": "ReadMe.txt",
+      "bytes": 3422,
+      "version": null
+    },
+    {
+      "path": "NVPI Revamped App\\CustomSettingNames.xml",
+      "bytes": 718747,
+      "version": null
+    },
+    {
+      "path": "NVPI Revamped App\\NVPI-R.exe",
+      "bytes": 1527296,
+      "version": "7.3.2.0"
+    },
+    {
+      "path": "NVPI Revamped App\\NVPI-R.exe.config",
+      "bytes": 174,
+      "version": null
+    },
+    {
+      "path": "NVPI Revamped App\\NVPI-R.pdb",
+      "bytes": 211036,
+      "version": null
+    },
+    {
+      "path": "NVPI Revamped App\\Reference.xml",
+      "bytes": 853970,
+      "version": null
+    },
+    {
+      "path": "Regedits & Profiles\\1. DLSS UI - Enable.reg",
+      "bytes": 288,
+      "version": null
+    },
+    {
+      "path": "Regedits & Profiles\\2. DLSS UI - Disable.reg",
+      "bytes": 289,
+      "version": null
+    },
+    {
+      "path": "Regedits & Profiles\\HybredsProfile.nip",
+      "bytes": 8285,
+      "version": null
+    }
+  ]
+}
