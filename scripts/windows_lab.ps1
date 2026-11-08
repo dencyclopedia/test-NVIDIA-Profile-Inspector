@@ -137,6 +137,40 @@ function Select-Row($hwnd, $name) {
   } catch { return "error: $($_.Exception.Message)" }
 }
 
+
+function Forward($p, $files, $flags) {
+  # Hand .nip files to the running instance (single-instance forwarding) and wait.
+  $work2 = Split-Path -Parent $p.Path
+  $args2 = @('-mock') + $flags + @($files | ForEach-Object { Join-Path $work2 $_ })
+  $q = Start-Process -FilePath $p.Path -ArgumentList $args2 -WorkingDirectory $work2 -PassThru
+  Start-Sleep -Seconds 6
+  if ($q.HasExited) { "fwd-exit:$($q.ExitCode)" } else { 'fwd-running' }
+}
+function Select-Profile($hwnd, $name) {
+  # Type a profile name into the profile box (AutomationId ProfileCombo) and press Enter.
+  try {
+    $el = [System.Windows.Automation.AutomationElement]::FromHandle($hwnd)
+    $cond = New-Object System.Windows.Automation.PropertyCondition([System.Windows.Automation.AutomationElement]::AutomationIdProperty, 'ProfileCombo')
+    $combo = $el.FindFirst([System.Windows.Automation.TreeScope]::Descendants, $cond)
+    if (-not $combo) { return 'no-ProfileCombo' }
+    $ec = New-Object System.Windows.Automation.PropertyCondition([System.Windows.Automation.AutomationElement]::ControlTypeProperty, [System.Windows.Automation.ControlType]::Edit)
+    $edit = $combo.FindFirst([System.Windows.Automation.TreeScope]::Descendants, $ec)
+    $target = if ($edit) { $edit } else { $combo }
+    $target.SetFocus(); Start-Sleep -Milliseconds 300
+    [System.Windows.Forms.SendKeys]::SendWait('^a'); Start-Sleep -Milliseconds 200
+    [System.Windows.Forms.SendKeys]::SendWait($name); Start-Sleep -Milliseconds 800
+    [System.Windows.Forms.SendKeys]::SendWait('{ENTER}'); Start-Sleep -Seconds 2
+    return "typed-into-$(if ($edit) {'edit'} else {'combo'})"
+  } catch { return "error: $($_.Exception.Message)" }
+}
+function Click-Dialog-Button($p, $label) {
+  foreach ($h in [W]::ForPid([uint32]$p.Id)) {
+    $r = Invoke-ByHelp $h $label
+    if ($r -ne 'not-found') { return "$label=$r" }
+  }
+  return "$label=not-found"
+}
+
 function Write-Settings($dir, $extra) {
   # Portable settings.xml (NPI reads settings.xml from the working directory first).
   $base = [ordered]@{ WindowTop = 0; WindowLeft = 0; WindowWidth = 1360; WindowHeight = 860; WindowState = 'Normal';
@@ -323,6 +357,18 @@ foreach ($v in $dirs.Keys) {
   $all += Run-Case $v $dir 'mock-import-merge' @('-mock', '-mergeImport', 'npilab-sample.nip') @{} 14 $null
   $all += Run-Case $v $dir 'mock-exportCustomized' @('-mock', '-exportCustomized') $null 15 $null
   $all += Run-Case $v $dir 'mock-import-then-modified' @('-mock', '-silentImport', 'npilab-sample.nip') @{} 14 { param($h, $p) Invoke-ByHelp $h 'View Modified Profiles' }
+
+  # ---- round 3: populated profiles, NPI's Replace/Merge logic, prompts and resets (mock mode) ----
+  $games = @('game-cyberpunk-2077.nip', 'game-fortnite.nip', 'game-skyrim-se.nip', 'game-rdr2.nip')
+  $all += Run-Case $v $dir 'r3-populated-modified-list' @('-mock') @{ WindowLeft = 120 } 26 { param($h, $p) $f = Forward $p $games @('-silentImport'); $m = Invoke-ByHelp $h 'View Modified Profiles'; "$f ; $m" }
+  $all += Run-Case $v $dir 'r3-profile-cyberpunk' @('-mock') @{ WindowLeft = 120 } 26 { param($h, $p) $f = Forward $p $games @('-silentImport'); $s = Select-Profile $h 'Cyberpunk 2077'; Set-Search $h 'dlss' | Out-Null; "$f ; $s" }
+  $all += Run-Case $v $dir 'r3-profile-fortnite' @('-mock') @{ WindowLeft = 120 } 26 { param($h, $p) $f = Forward $p $games @('-silentImport'); $s = Select-Profile $h 'Fortnite'; "$f ; $s" }
+  $all += Run-Case $v $dir 'r3-profile-rdr2-rebar' @('-mock') @{ WindowLeft = 120; SettingSourceReference = 'true' } 26 { param($h, $p) $f = Forward $p $games @('-silentImport'); $s = Select-Profile $h 'Red Dead Redemption 2'; Set-Search $h 'rbar' | Out-Null; "$f ; $s" }
+  $all += Run-Case $v $dir 'r3-import-prompt' @('-mock') @{ WindowLeft = 120 } 22 { param($h, $p) Forward $p @('game-skyrim-se.nip') @() }
+  $all += Run-Case $v $dir 'r3-replace' @('-mock') @{ WindowLeft = 120 } 30 { param($h, $p) $a = Forward $p @('replace-a.nip') @('-silentImport'); $b = Forward $p @('replace-b.nip') @('-replaceImport', '-silentImport'); $s = Select-Profile $h 'NPI Lab Replace Test'; "$a ; $b ; $s" }
+  $all += Run-Case $v $dir 'r3-merge' @('-mock') @{ WindowLeft = 120 } 30 { param($h, $p) $a = Forward $p @('replace-a.nip') @('-silentImport'); $b = Forward $p @('replace-b.nip') @('-mergeImport', '-silentImport'); $s = Select-Profile $h 'NPI Lab Replace Test'; "$a ; $b ; $s" }
+  $all += Run-Case $v $dir 'r3-defaults-on-custom' @('-mock') @{ WindowLeft = 120 } 30 { param($h, $p) $a = Forward $p @('replace-a.nip') @('-silentImport'); $s = Select-Profile $h 'NPI Lab Replace Test'; $d = Invoke-ByHelp $h 'Restore profile to NVIDIA default settings'; Start-Sleep 2; $y = Click-Dialog-Button $p 'Yes'; Start-Sleep 2; "$a ; $s ; defaults=$d ; $y" }
+  $all += Run-Case $v $dir 'r3-copy-populated' @('-mock') @{ WindowLeft = 120 } 28 { param($h, $p) $f = Forward $p $games @('-silentImport'); $s = Select-Profile $h 'Fortnite'; $r = Invoke-ByHelp $h 'Copy settings to clipboard'; Start-Sleep 1; $c = Get-Clipboard -Raw; if ($c) { [IO.File]::WriteAllText((Join-Path $out "$v\r3-copy-populated\clipboard.txt"), $c) }; "$f ; $s ; $r ; chars=$($c.Length)" }
   $all += Run-Case $v $dir 'mock-update-check-on' @('-mock') @{ DisableUpdateCheck = 'false' } 20 $null
   $all += Run-Case $v $dir 'mock-software-render' @('-mock', '-useSoftwareRendering', '-disableTransparency') @{} 12 $null
 
