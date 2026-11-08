@@ -1,0 +1,200 @@
+{
+  "version": "v3.0.2.1",
+  "machine": "windows-2025",
+  "date": "2026-11-08T15:12:11.6044510+00:00",
+  "settingsLocation": {
+    "a1_mainWindow": true,
+    "a1_rect": {
+      "left": 365,
+      "top": 141,
+      "width": 1190,
+      "height": 750
+    },
+    "a1_close": "closed",
+    "a1_appDataTree": "\\settings.xml 1529",
+    "a1_exeDirNewFiles": [],
+    "a2_rect": {
+      "left": 111,
+      "top": 77,
+      "width": 1111,
+      "height": 777
+    },
+    "a2_close": "closed",
+    "a3_rect": {
+      "left": 365,
+      "top": 141,
+      "width": 1190,
+      "height": 750
+    },
+    "a3_close": "closed",
+    "a3_otherDirFiles": [],
+    "expectedPortableRect": {
+      "WindowHeight": 777,
+      "WindowTop": 77,
+      "WindowLeft": 111,
+      "WindowWidth": 1111
+    }
+  },
+  "favourites": {
+    "favoritesGroupShown": false,
+    "textsSample": [
+      "NVIDIA PROFILE INSPECTOR - MOCK!",
+      "nvidiaProfileInspector.UI.ViewModels.SettingGroupHeaderViewModel",
+      "nvidiaProfileInspector.UI.ViewModels.SettingItemViewModel",
+      "Frame Rate Limiter V3",
+      "Off",
+      "0x00000000",
+      "Ambient Occlusion - Compatibility",
+      "Antialiasing - Compatibility (DX1x)",
+      "Antialiasing - Compatibility (DX9)",
+      "Antialiasing Fix (DX9)",
+      "0x00000001",
+      "Flip Indicator",
+      "Disabled",
+      "Frame Rate Limiter - Background Application",
+      "GSYNC - Application Mode",
+      "Fullscreen only",
+      "GSYNC - Application Requested State",
+      "Allow",
+      "GSYNC - Application State",
+      "GSYNC - Global Feature",
+      "On",
+      "GSYNC - Global Mode",
+      "GSYNC - Indicator Overlay",
+      "GSYNC - Support Indicator Overlay",
+      "Maximum Pre-Rendered Frames",
+      "Use the 3D application setting",
+      "Prefered Refreshrate",
+      "Triple Buffering",
+      "Ultra Low Latency - CPL State",
+      "Ultra Low Latency - Enabled",
+      "Vertical Sync",
+      "0x60925292",
+      "Vertical Sync - Smooth AFR Behavior",
+      "Vertical Sync - Tear Control",
+      "Standard",
+      "0x96861077",
+      "Vulkan/OpenGL Present Method",
+      "Auto",
+      "0x00000002",
+      "Vulkan/OpenGL Present Method - Flags"
+    ],
+    "close": "closed",
+    "idStillSavedAfterClose": true,
+    "settingsAfterClose": "<?xml version=\"1.0\" encoding=\"utf-16\"?>\r\n<UserSettings>\r\n  <WindowTop>141</WindowTop>\r\n  <WindowLeft>365</WindowLeft>\r\n  <WindowWidth>1360</WindowWidth>\r\n  <WindowHeight>860</WindowHeight>\r\n  <WindowState>Normal</WindowState>\r\n  <SettingsFilterMode>-1</SettingsFilterMode>\r\n  <HiddenSettingGroups />\r\n  <DisableUpdateCheck>true</DisableUpdateCheck>\r\n  <DisableSplashScreen>false</DisableSplashScreen>\r\n  <UpdateChannel>Release</UpdateChannel>\r\n  <FavoriteSettingIds>\r\n    <unsignedInt>277041154</unsignedInt>\r\n  </FavoriteSettingIds>\r\n  <Theme>DarkTheme.xaml</Theme>\r\n  <DisplayDensity>Modern</DisplayDensity>\r\n  <Win11BackdropMode>Default</Win11BackdropMode>\r\n  <SettingSourceCommon>true</SettingSourceCommon>\r\n  <SettingSourceDriver>false</SettingSourceDriver>\r\n  <SettingSourceConstants>false</SettingSourceConstants>\r\n  <SettingSourceReference>false</SettingSourceReference>\r\n  <SettingSourceScan>false</SettingSourceScan>\r\n  <ValueSourceCommon>true</ValueSourceCommon>\r\n  <ValueSourceDriver>false</ValueSourceDriver>\r\n  <ValueSourceConstants>true</ValueSourceConstants>\r\n  <ValueSourceReference>true</ValueSourceReference>\r\n  <ValueSourceScan>true</ValueSourceScan>\r\n  <ModifiedOnly>false</ModifiedOnly>\r\n  <ShowActiveFromDisabledSources>true</ShowActiveFromDisabledSources>\r\n  <MergeDistinctValues>true</MergeDistinctValues>\r\n  <AddPredefinedAppListToCommon>false</AddPredefinedAppListToCommon>\r\n  <AddRawValueToCommon>false</AddRawValueToCommon>\r\n  <AllowMetaFromInactiveSources>true</AllowMetaFromInactiveSources>\r\n  <ShowSettingIdInName>false</ShowSettingIdInName>\r\n</UserSettings>"
+  },
+  "updateCheck": {
+    "updateCheckOn": {
+      "https443RemoteAddresses": [],
+      "count": 0
+    },
+    "disableUpdateCheckTxt": {
+      "https443RemoteAddresses": [],
+      "count": 0
+    },
+    "disableUpdateCheckSetting": {
+      "https443RemoteAddresses": [],
+      "count": 0
+    },
+    "githubAddresses": [
+      "140.82.114.3"
+    ],
+    "apiGithubAddresses": [
+      "140.82.114.5"
+    ]
+  },
+  "leftovers": {
+    "appDataTree": "\\settings.xml 1529",
+    "hkcuNip": {
+      "(default)": "nvidiaProfileInspector.nip"
+    },
+    "hkcuProgId": [
+      "HKEY_CURRENT_USER\\Software\\Classes\\nvidiaProfileInspector.nip\\DefaultIcon",
+      "HKEY_CURRENT_USER\\Software\\Classes\\nvidiaProfileInspector.nip\\shell",
+      "HKEY_CURRENT_USER\\Software\\Classes\\nvidiaProfileInspector.nip\\shell\\open",
+      "HKEY_CURRENT_USER\\Software\\Classes\\nvidiaProfileInspector.nip\\shell\\open\\command"
+    ],
+    "hkcuSoftwareKeys": [],
+    "tempMatches": [],
+    "startMenu": []
+  },
+  "classicInspector": {
+    "url": "https://download.orbmu2k.de/files/nvidiaInspector.zip",
+    "zipBytes": 203889,
+    "zipSha256": "107c7255a4304d178db8fccebc637930ef3f8806d0bb72b4cbe0b64573a7079b",
+    "exeSha256": "4128026b5a096ee35198fa18db1f6c6d27a81096aac48bc86803e5ad8a2dea7a",
+    "fileVersion": "1.9.8.7",
+    "signature": "NotSigned",
+    "defender": "Scan starting...\r\nScan finished.\r\nScanning D:\\a\\_temp\\r5\\ni\\nvidiaInspector.exe found no threats.",
+    "exited": false,
+    "windows": [
+      {
+        "title": "NVIDIA Inspector 1.9.8.7 - ©2022 by Orbmu2k - GPU (0/0)",
+        "texts": [
+          "Force P0 State",
+          "P-State",
+          "Speed",
+          "Fan",
+          "Mem Type",
+          "Memory Size",
+          "Voltage",
+          "VPU",
+          "MCU",
+          "GPU Load",
+          "Shader",
+          "Memory",
+          "Default Clock",
+          "GPU Clock",
+          "Current Clock",
+          "PCB",
+          "Temperature",
+          "Driver Version",
+          "Bus Width",
+          "PCIe Interface",
+          "Shaders",
+          "ROPs",
+          "Subvendor",
+          "Device ID",
+          "BIOS",
+          "Rev",
+          "GPU",
+          "Name",
+          "Create Clocks Shortcut",
+          "Set Fan",
+          "Overclocking",
+          "Voltage Offset - [0 mV]",
+          "0.0 mV",
+          "Power and Temperature Target",
+          "Priorize Temperature",
+          "100 %",
+          "0 %",
+          "100 °C",
+          "0 °C",
+          "Memory Clock Offset - [0 MHz]",
+          "+1",
+          "+10",
+          "+20",
+          "-20",
+          "-10",
+          "-1",
+          "-300 MHz",
+          "+300 MHz",
+          "0 MHz",
+          "Base Clock Offset - [0 MHz]",
+          "Unlock Max",
+          "0.000 V",
+          "Shader Clock",
+          "0MHz",
+          "Unlock Min",
+          "Memory Clock",
+          "Apply Defaults",
+          "Auto",
+          "100%",
+          "Show Overclocking",
+          "Apply Clocks & Voltage"
+        ]
+      }
+    ],
+    "otherWindows": []
+  }
+}
