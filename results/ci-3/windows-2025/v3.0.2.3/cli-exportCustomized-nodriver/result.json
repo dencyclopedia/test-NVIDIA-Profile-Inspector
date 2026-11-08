@@ -1,0 +1,28 @@
+{
+  "case": "cli-exportCustomized-nodriver",
+  "version": "v3.0.2.3",
+  "machine": "windows-2025",
+  "args": "-exportCustomized",
+  "settings": null,
+  "started": "2026-11-08T14:18:29.1196062+00:00",
+  "firstWindowMs": 256,
+  "windowTitlesSeen": [
+    "NVIDIA PROFILE INSPECTOR"
+  ],
+  "exitedEarly": false,
+  "workingSetMB": 61.8,
+  "windows": [
+    {
+      "title": "NVIDIA PROFILE INSPECTOR",
+      "class": "HwndWrapper[nvidiaProfileInspector.exe;;e4adfd00-43b2-4984-b701-542ab7d344af]",
+      "texts": [
+        "NVIDIA PROFILE INSPECTOR",
+        "No compatible NVIDIA Driver was detected on your system. Your NVIDIA GPU might be disabled.",
+        "OK"
+      ],
+      "shot": "400 x 203"
+    }
+  ],
+  "elapsedMs": 15639,
+  "filesCreated": []
+}

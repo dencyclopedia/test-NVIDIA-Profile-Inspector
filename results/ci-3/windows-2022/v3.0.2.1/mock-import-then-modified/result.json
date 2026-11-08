@@ -1,0 +1,21 @@
+{
+  "case": "mock-import-then-modified",
+  "version": "v3.0.2.1",
+  "machine": "windows-2022",
+  "args": "-mock -silentImport npilab-sample.nip",
+  "settings": {},
+  "started": "2026-11-08T14:13:40.6815738+00:00",
+  "firstWindowMs": null,
+  "windowTitlesSeen": [],
+  "exitedEarly": true,
+  "exitCode": 0,
+  "exitMs": 505,
+  "windows": [],
+  "elapsedMs": 505,
+  "filesCreated": [
+    {
+      "name": "settings.xml",
+      "bytes": 1030
+    }
+  ]
+}

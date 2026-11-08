@@ -1,0 +1,26 @@
+{
+  "machine": "windows-2025",
+  "run": "ci-3",
+  "date": "2026-11-08T14:07:07.7137039+00:00",
+  "os": "Microsoft Windows Server 2025 Datacenter 10.0.26100 build 26100",
+  "cpu": "INTEL(R) XEON(R) PLATINUM 8573C",
+  "ramGB": 16.0,
+  "gpus": [
+    "Microsoft Hyper-V Video | driver 10.0.26100.1150"
+  ],
+  "netFxRelease": 533509,
+  "netFxVersion": "4.8.09221",
+  "nvapi64": false,
+  "nvapi32": false,
+  "drsFolder": false,
+  "isAdmin": true,
+  "uacEnableLUA": 1,
+  "resolutionBefore": "1024x768",
+  "setResolution": "0",
+  "resolutionAfter": "1920x1080",
+  "defender": {
+    "AMServiceEnabled": true,
+    "RealTimeProtectionEnabled": false,
+    "AntivirusSignatureVersion": "1.463.110.0"
+  }
+}

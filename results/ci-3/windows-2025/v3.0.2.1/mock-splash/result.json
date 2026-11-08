@@ -1,0 +1,31 @@
+{
+  "case": "mock-splash",
+  "version": "v3.0.2.1",
+  "machine": "windows-2025",
+  "args": "-mock",
+  "settings": {},
+  "started": "2026-11-08T14:08:30.1664308+00:00",
+  "firstWindowMs": 268,
+  "windowTitlesSeen": [],
+  "exitedEarly": false,
+  "workingSetMB": 88.7,
+  "windows": [
+    {
+      "title": "",
+      "class": "HwndWrapper[nvidiaProfileInspector.exe;Startup splash screen;517e687c-c557-4707-84f8-35586aa3effc]",
+      "texts": [
+        "NVIDIA PROFILE INSPECTOR",
+        "Preparing driver profiles and settings...",
+        "Loading application"
+      ],
+      "shot": "508 x 187"
+    }
+  ],
+  "elapsedMs": 884,
+  "filesCreated": [
+    {
+      "name": "settings.xml",
+      "bytes": 1030
+    }
+  ]
+}

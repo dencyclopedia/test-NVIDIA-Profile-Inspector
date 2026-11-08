@@ -1,0 +1,33 @@
+{
+  "case": "mock-import-interactive",
+  "version": "v3.0.2.1",
+  "machine": "windows-2025",
+  "args": "-mock npilab-sample.nip",
+  "settings": {},
+  "started": "2026-11-08T14:12:40.2572161+00:00",
+  "firstWindowMs": 521,
+  "windowTitlesSeen": [
+    "Import"
+  ],
+  "exitedEarly": false,
+  "workingSetMB": 74.8,
+  "windows": [
+    {
+      "title": "Import",
+      "class": "HwndWrapper[nvidiaProfileInspector.exe;;3e758525-d02c-4f40-a3b2-ce1abb56aa9c]",
+      "texts": [
+        "Import",
+        "Profile(s) imported successfully!",
+        "OK"
+      ],
+      "shot": "400 x 191"
+    }
+  ],
+  "elapsedMs": 14664,
+  "filesCreated": [
+    {
+      "name": "settings.xml",
+      "bytes": 1030
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "case": "cli-createCSN",
+  "version": "v3.0.2.3",
+  "machine": "windows-2022",
+  "args": "-createCSN",
+  "settings": null,
+  "started": "2026-11-08T14:18:21.2399054+00:00",
+  "firstWindowMs": null,
+  "windowTitlesSeen": [],
+  "exitedEarly": true,
+  "exitCode": 0,
+  "exitMs": 257,
+  "windows": [],
+  "elapsedMs": 257,
+  "filesCreated": [
+    {
+      "name": "CustomSettingNames.xml",
+      "bytes": 396384
+    }
+  ]
+}
