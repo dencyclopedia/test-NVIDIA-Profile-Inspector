@@ -1,0 +1,45 @@
+{
+  "case": "cli-createCSN",
+  "version": "v3.0.2.1",
+  "machine": "windows-2022",
+  "args": "-createCSN",
+  "settings": null,
+  "started": "2026-11-08T14:12:35.7486311+00:00",
+  "firstWindowMs": null,
+  "windowTitlesSeen": [],
+  "exitedEarly": true,
+  "exitCode": 0,
+  "exitMs": 524,
+  "windows": [],
+  "elapsedMs": 525,
+  "filesCreated": [
+    {
+      "name": "CustomSettingNames.xml",
+      "bytes": 394838
+    },
+    {
+      "name": "game-cyberpunk-2077.nip",
+      "bytes": 2472
+    },
+    {
+      "name": "game-fortnite.nip",
+      "bytes": 2464
+    },
+    {
+      "name": "game-rdr2.nip",
+      "bytes": 1902
+    },
+    {
+      "name": "game-skyrim-se.nip",
+      "bytes": 1524
+    },
+    {
+      "name": "replace-a.nip",
+      "bytes": 1496
+    },
+    {
+      "name": "replace-b.nip",
+      "bytes": 1020
+    }
+  ]
+}

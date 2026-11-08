@@ -1,0 +1,45 @@
+{
+  "case": "mock-exportCustomized",
+  "version": "v3.0.2.1",
+  "machine": "windows-2022",
+  "args": "-mock -exportCustomized",
+  "settings": null,
+  "started": "2026-11-08T14:17:28.1669097+00:00",
+  "firstWindowMs": null,
+  "windowTitlesSeen": [],
+  "exitedEarly": true,
+  "exitCode": 0,
+  "exitMs": 501,
+  "windows": [],
+  "elapsedMs": 501,
+  "filesCreated": [
+    {
+      "name": "CustomProfiles_2026-11-08_14-17-28.nip",
+      "bytes": 474
+    },
+    {
+      "name": "game-cyberpunk-2077.nip",
+      "bytes": 2472
+    },
+    {
+      "name": "game-fortnite.nip",
+      "bytes": 2464
+    },
+    {
+      "name": "game-rdr2.nip",
+      "bytes": 1902
+    },
+    {
+      "name": "game-skyrim-se.nip",
+      "bytes": 1524
+    },
+    {
+      "name": "replace-a.nip",
+      "bytes": 1496
+    },
+    {
+      "name": "replace-b.nip",
+      "bytes": 1020
+    }
+  ]
+}

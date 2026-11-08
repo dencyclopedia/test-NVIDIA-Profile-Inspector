@@ -1,0 +1,4 @@
+### NVIDIA PROFILE INSPECTOR ###
+Profile: 
+
+Win11 Backdrop Mode                      'Default' (Base Profile)
